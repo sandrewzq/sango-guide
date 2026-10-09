@@ -269,6 +269,13 @@
 .navbtn{display:none; background:none; border:1px solid #6b5433; color:#d9c39a;
   border-radius:14px; font-size:13px; font-family:inherit; padding:4px 12px; cursor:pointer;}
 .navbtn:hover{background:#5c4630; color:#fff3d8;}
+
+/* 返回系列首页按钮（后加，非原攻略内容） */
+.topbar .homebtn{flex:0 0 auto; color:#d9c39a; text-decoration:none; font-size:13px;
+  letter-spacing:1.5px; border:1px solid #6b5433; border-radius:14px; padding:4px 12px;
+  white-space:nowrap; transition:.15s;}
+.topbar .homebtn:hover{background:#5c4630; color:#fff3d8; border-color:#8a6d45;}
+@media(max-width:620px){ .topbar .homebtn{font-size:12px; letter-spacing:0; padding:4px 9px;} }
 #hits{left:auto; right:0; top:118%; width:min(460px,86vw); max-height:62vh;}
 
 /* ---------------- 左侧目录 ---------------- */
@@ -318,6 +325,7 @@
 
 <div class="topbar">
   <button class="navbtn" id="navbtn" type="button">目　录</button>
+  <a class="homebtn" href="../index.html" title="返回系列首页">← 系列首页</a>
   <span class="brand">三国群英传V　完全攻略</span>
   <span class="search">
     <input id="q" type="search" placeholder="搜武将 / 城 / 忠诚 / 骑兵…" autocomplete="off">
