@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>三国群英传V · 内政机制指南</title>
+<style>
+  :root{ --ink:#2b2118; --line:#ded2bc; --bg:#f6f1e6; --card:#fffdf8; --qi:#b8860b; }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--bg); color:var(--ink); font-size:16px; line-height:1.75;
+       font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB",sans-serif;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 18px 60px;}
+  header{background:linear-gradient(135deg,#3a2c1e,#5c4630); color:#f3e7cf;
+    padding:28px 18px; text-align:center; border-bottom:4px solid var(--qi);}
+  header h1{margin:0; font-size:23px; letter-spacing:4px; font-weight:700;}
+  header p{margin:6px 0 0; color:#cbb894; font-size:13px;}
+  .key{background:#eef4fa; border:1px solid #c3d6e8; border-radius:10px;
+    padding:16px 22px; margin:22px 0; box-shadow:0 2px 8px rgba(90,70,40,.06);}
+  .key h3{margin:0 0 8px; font-size:16px; color:#25527d;}
+  .key li{margin:6px 0;} .key b{color:#1d4f7c;}
+  h2{font-size:17px; margin:34px 0 8px; padding-left:12px;
+     border-left:5px solid var(--qi); line-height:1.3;}
+  .sub{color:#7a6a52; font-size:14px; margin:0 0 10px;}
+  table{width:100%; border-collapse:collapse; background:var(--card);
+    border:1px solid var(--line); border-radius:10px; overflow:hidden; font-size:15px;
+    box-shadow:0 2px 8px rgba(90,70,40,.06);}
+  th,td{padding:8px 9px; border-bottom:1px solid var(--line); text-align:center;}
+  th{background:#efe6d3; color:#5a4630; letter-spacing:.5px;}
+  tbody tr:last-child td{border-bottom:none;}
+  tbody tr:nth-child(even){background:#fbf7ee;}
+  td.cmd{font-weight:700; color:#3f3225; white-space:nowrap;}
+  td.no{color:#a8987d; width:56px; font-size:13px;}
+  td:last-child{text-align:left;}
+  .pair{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:10px 0;}
+  .pair > div{background:var(--card); border:1px solid var(--line); border-radius:10px;
+    padding:12px 18px; box-shadow:0 2px 8px rgba(90,70,40,.06);}
+  .pair h4{margin:0 0 6px; font-size:15.5px;}
+  .pair .a h4{color:#2f5f8c;} .pair .b h4{color:#8c3a2e;}
+  .pair ul{margin:0; padding-left:20px;} .pair li{margin:4px 0; font-size:14.5px;}
+  .warn{background:#fff8e8; border-left:4px solid #e0a800; border-radius:6px;
+    padding:12px 18px; margin:18px 0; font-size:15px; color:#6a5322;}
+  .good{background:#eef7f1; border-left:4px solid #4ca97c; border-radius:6px;
+    padding:12px 18px; margin:18px 0; font-size:15px; color:#1f5c40;}
+  ul.pl{margin:8px 0; padding-left:22px;} ul.pl li{margin:5px 0;}
+  .tag{display:inline-block; padding:1px 9px; border-radius:20px; font-size:13px;
+    background:#efe6d3; color:#6b5433;}
+  footer{margin-top:44px; padding-top:16px; border-top:1px solid var(--line);
+    color:#9a8b74; font-size:12px; text-align:center;}
+  @media (max-width:620px){
+    header h1{font-size:18px;} th,td{padding:6px 4px; font-size:13px;}
+    .pair{grid-template-columns:1fr;} td.no{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>内 政 机 制 指 南</h1>
+  <p>三国群英传 V　·　一季能干几件事、人怎么挖、宝从哪来</p>
+</header>
+
+<div class="wrap">
+
+  <div class="key">
+    <h3>先弄清四件事</h3>
+    <ul>
+      <li>内政<b>按季</b>做（春 / 夏 / 秋 / 冬），每座城每季下一个命令，不是随时点。</li>
+      <li>册封、说服、招降<b>每季都有名额上限</b>。游戏原文：「本季尚可册封的武将共 N 位」
+          「本季已无人才可进行说服」「本季已无俘虏可进行招降」。</li>
+      <li>挖人成功与否，<b>头号因素是忠诚</b>（每个武将天生带一个固定值，武将资料面板里能看），其次才是手段和钱。</li>
+      <li><b>先说清楚：</b>成功率、产出概率这类数字，游戏文件里<b>没有</b>——
+          它们是编译在程序里的。下面每条都注明了出处在哪，没依据的不编。</li>
+    </ul>
+  </div>
+
+  <h2>一、一季的八条内政命令</h2>
+  <p class="sub">进城的「内政」选单里就是这八条。</p>
+  <table>
+    <thead><tr><th>命令</th><th>管什么</th></tr></thead>
+    <tbody>
+      <tr><td class="cmd">任命太守</td><td>换这座城的太守，太守能力影响该城内政效率</td></tr>
+      <tr><td class="cmd">商业开发</td><td>提升城市开发度，开发越高收入越多</td></tr>
+      <tr><td class="cmd">搜索探查</td><td>在城里搜寻人才与宝物，可能碰上事件（见第五节）</td></tr>
+      <tr><td class="cmd">防御筑城</td><td>提升城防，守城时的本钱</td></tr>
+      <tr><td class="cmd">整顿治安</td><td>维持治安，治安差会闹民变、掉人口</td></tr>
+      <tr><td class="cmd">征预备兵</td><td>把人口转成预备兵，打仗补员全靠它</td></tr>
+      <tr><td class="cmd">训练士气</td><td>练部队士气，士气高打得狠</td></tr>
+      <tr><td class="cmd">地牢俘虏</td><td>处理关在城里的敌将，招降 / 斩首都在这</td></tr>
+    </tbody>
+  </table>
+  <p class="sub">城里另有：<b>税率</b>（调高了钱多但民心掉）、
+     <b>全城最大征兵</b>、<b>全城兵力撤除</b>。</p>
+
+  <h2>二、每座城身上记着这些数</h2>
+  <table>
+    <thead><tr><th>数据</th><th>含义</th></tr></thead>
+    <tbody>
+      <tr><td class="cmd">人口</td><td>征兵和收税的根本，被打会掉</td></tr>
+      <tr><td class="cmd">金钱</td><td>城的库存，发俸禄、送礼、征兵都花钱</td></tr>
+      <tr><td class="cmd">民心</td><td>内政好坏的结果，低了容易出乱子</td></tr>
+      <tr><td class="cmd">开发</td><td>商业开发累积，越高税收越多</td></tr>
+      <tr><td class="cmd">防御</td><td>筑城累积，攻城时对方要啃的本钱</td></tr>
+      <tr><td class="cmd">预备兵</td><td>随时能补进部队的兵源</td></tr>
+    </tbody>
+  </table>
+  <div class="warn">
+    内政做完会给一句评语，就是<b>效果提示</b>：
+    好的是「小有成效 / 成效良好 / 政绩卓越 / 民安城富」，
+    差的是「昏庸无能，导致损失惨重 / 处置失当，导致大量损失 / 及时处置，导致少许损失」。
+    看到「昏庸无能」就说明该城太守能力太差，换人。
+  </div>
+
+  <h2>三、人怎么挖：两种场合，各有一套手段</h2>
+  <div class="pair">
+    <div class="a">
+      <h4>说服人才（对在野武将）</h4>
+      <ul>
+        <li><b>请求</b>——礼貌相邀，成功靠声望</li>
+        <li><b>重利</b>——给钱，界面要填「给予金额」</li>
+        <li><b>说服</b>——让有魅力的武将去谈</li>
+        <li>也有<b>自动说服</b>，一键全谈一遍</li>
+      </ul>
+    </div>
+    <div class="b">
+      <h4>招降敌将（对地牢俘虏）</h4>
+      <ul>
+        <li><b>劝降</b>——陈说形势，讲道理</li>
+        <li><b>威胁</b>——以死相逼</li>
+        <li><b>酷刑</b>——用刑，消耗对方意志</li>
+        <li><b>利诱</b>——给钱免罪</li>
+        <li>也有<b>自动招降</b>，另有<b>自动斩首</b></li>
+      </ul>
+    </div>
+  </div>
+  <p class="sub">每种手段在游戏里都有成套台词。哪种手段对哪种武将有效，文件里没有对应表，
+     但选错手段会被直接喷回来——原文里最高傲的一句是
+     「便是只得做一村夫野人，也断不出仕汝军，莫再痴心妄想」。</p>
+
+  <h2>四、能不能挖到，先看这个人的「忠诚」</h2>
+  <p>每个武将都有一个<b>天生的忠诚</b>，游戏里打开武将资料面板就能看到这一项。
+     它决定了这个人好不好招、会不会叛：</p>
+  <table>
+    <thead><tr><th>忠诚</th><th>代表武将</th><th>你要有心理准备</th></tr></thead>
+    <tbody>
+      <tr><td class="cmd">90 ~ 100</td>
+          <td>关羽 100、诸葛亮 100、周瑜 100、张飞 99、赵云 98、孙策 94</td>
+          <td style="text-align:left">砸钱、威胁、上刑基本无效，这种人只认旧主</td></tr>
+      <tr><td class="cmd">50 ~ 89</td>
+          <td>曹操 88、张辽 68、荀彧 65、郭嘉 63</td>
+          <td style="text-align:left">正常招，看手段和诚意</td></tr>
+      <tr><td class="cmd">40 ~ 49</td>
+          <td>于禁 42、孟达 43、黄忠 41</td>
+          <td style="text-align:left">被俘后有戏，但也容易被别人挖</td></tr>
+      <tr><td class="cmd">40 以下</td>
+          <td>吕布 27、董卓 30、魏延 36、许子将 32、管辂 25</td>
+          <td style="text-align:left">一被俘基本就降；反过来，你自己手下这种人也要盯紧</td></tr>
+    </tbody>
+  </table>
+  <div class="good">
+    <b>实用结论：</b>想补猛将，别盯着蜀汉那批死忠——他们是打不动的。
+    把机会留给<b>吕布（武 100 / 忠诚 27）、黄忠（95 / 41）、魏延（94 / 36）、董卓（92 / 30）</b>
+    这类「有本事又挖得动」的。军师里则是
+    <b>贾诩（智 97 / 51）、钟会（96 / 55）、许子将（95 / 32）、司马徽（95 / 39）</b>。
+  </div>
+
+  <h2>五、搜索探查能碰上什么</h2>
+  <p>数据里明写着的探索事件有这些，选项和奖励都在游戏文本里：</p>
+  <table>
+    <thead><tr><th>碰上</th><th>你能做什么</th><th>可能拿到</th></tr></thead>
+    <tbody>
+      <tr><td class="cmd">水底沉船</td><td>打捞 / 放弃</td><td>宝物、物品、金钱</td></tr>
+      <tr><td class="cmd">上古石碑</td><td>解读（识别不了就白跑）</td>
+          <td><b>习得武将技</b>——读完石碑立刻粉碎，机会只有一次</td></tr>
+      <tr><td class="cmd">云游仙人</td><td>挑战 / 通过考验 / 绕路</td>
+          <td>智力+ / 武力+ / 体力上限+ / 技力上限+，或全员兵力增加；
+              打不过就被仙人击败</td></tr>
+      <tr><td class="cmd">山贼、暴民</td><td>讨伐 / 收编 / 撤退</td><td>兵力、金钱</td></tr>
+      <tr><td class="cmd">异象</td><td>留意</td><td>神兽出没的提示（毒龙潭 / 猛虎穴 / 大雪山 /
+          火焰山 / 兽神洞 / 桃源乡）</td></tr>
+    </tbody>
+  </table>
+  <p class="sub">另外城里还会自己冒好事和坏事——</p>
+  <ul class="pl">
+    <li><b>好事</b>：城中百姓来献家传宝物、富商赞助军资粮饷、青年壮丁自愿入伍从军、
+        外地人民迁徙入城、砖石工匠自愿修筑城墙、地方士绅劳军、市集规模扩大。</li>
+    <li><b>坏事</b>：暴民四处劫掠、士兵鼓噪叛变、人口向外迁移、城墙崩塌、
+        蝗虫侵袭、无名火灾、山洪围城、市集萎缩。</li>
+  </ul>
+
+  <h2>六、三个容易被忽略的机制</h2>
+  <ul class="pl">
+    <li><b>储君</b>——内政选单里有「设立储君」。君主一旦阵亡、被俘或失踪，
+        储君立刻继位（游戏原文：「储君○○后继其位」）。没立储君的话政权会很被动，
+        而且<b>储君上任不满一年不能换</b>，开局就早点定下来。</li>
+    <li><b>俘虏会越狱</b>——关在地牢里的敌将不是稳的：「地牢人犯骚动，趁隙脱逃」
+        「自○○地牢逃脱，顺利返回○○」。抓到人要么尽快处理，要么多留人守城。</li>
+    <li><b>赏赐换忠诚</b>——武将面板里有「忠诚」和「疲劳」两项。
+        拿赏赐品送人涨忠诚：玉器 +15、绸缎 +10、布匹 +5，龙纹白玉 +50、四灵宝镜 +80。
+        连战会累积疲劳，注意轮换。</li>
+  </ul>
+
+  <h2>七、名将还能复活</h2>
+  <p>数据表里有 <b>44 名武将</b>被特别标记为可复活，对应游戏里的「复活名将」机制——
+     学会<b>木人力士</b>后可以把他们拉回来。游戏原文：
+     「复活名将：……等人习得木人力士！」「没有可以复活的武将！」</p>
+  <p class="sub">另外还有<b>奥汀秘术</b>与<b>真奥汀秘术</b>这类顶级秘术，
+     分雷霆 / 疾风 / 狂风 / 烈焰 / 烈火 / 怒涛 / 流水 / 大地八系，通过事件获取。</p>
+
+  <div class="warn">
+    <b>关于「刷宝」的实话：</b>游戏文件里<b>查不到</b>物品掉落概率、搜索产出表、
+    招降成功率这类数值——它们编译在程序里，数据表只有
+    「有哪些东西」和「界面怎么显示」。所以能确定的只有：
+    高级货（书籍、神器）是装备而不是消耗品、一人只有一个道具栏；
+    拿宝的正路是<b>占城后的探索事件 + 商店 + 战场缴获</b>，
+    而事件触发取决于你派出去的武将，<b>多练级、多派人搜</b>比攒钱实在。
+  </div>
+
+  <footer>依据《三国群英传V》游戏本体数据整理　·　内政按季执行，招揽每季有名额</footer>
+
+</div>
+</body>
+</html>

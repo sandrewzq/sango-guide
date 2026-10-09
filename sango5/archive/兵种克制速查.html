@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>三国群英传V · 兵种克制速查</title>
+<style>
+  :root{
+    --ink:#2b2118; --line:#ded2bc; --bg:#f6f1e6; --card:#fffdf8;
+    --good:#2f8f6b; --bad:#c0392b; --qi:#b8860b;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink); font-size:16px; line-height:1.7;
+    font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB",sans-serif;
+  }
+  .wrap{max-width:860px; margin:0 auto; padding:0 18px 60px;}
+  header{
+    background:linear-gradient(135deg,#3a2c1e,#5c4630); color:#f3e7cf;
+    padding:28px 18px; text-align:center; border-bottom:4px solid var(--qi);
+  }
+  header h1{margin:0; font-size:23px; letter-spacing:4px; font-weight:700;}
+  header p{margin:6px 0 0; color:#cbb894; font-size:13px;}
+
+  .legend{
+    display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin:22px 0 8px;
+    font-size:14px; color:#6b5943;
+  }
+  .legend b{color:#8a5a00;}
+  .chain{
+    background:var(--card); border:1px solid var(--line); border-radius:10px;
+    padding:14px 20px; margin:14px 0; box-shadow:0 2px 8px rgba(90,70,40,.06);
+  }
+  .chain div{margin:6px 0; font-size:15px; line-height:2;}
+  .chain .c1{color:#3a5a8c; font-weight:700;}
+  .chain .c2{color:#2f8f6b; font-weight:700;}
+  .chain .c3{color:#c0392b; font-weight:700;}
+
+  h2{font-size:17px; margin:34px 0 12px; padding-left:12px;
+     border-left:5px solid var(--qi); line-height:1.3;}
+  table{width:100%; border-collapse:collapse; background:var(--card);
+    border:1px solid var(--line); border-radius:10px; overflow:hidden; font-size:15px;
+    box-shadow:0 2px 8px rgba(90,70,40,.06);}
+  th,td{padding:10px 10px; border-bottom:1px solid var(--line); vertical-align:top;}
+  th{background:#efe6d3; color:#5a4630; letter-spacing:.5px; text-align:center;}
+  tbody tr:last-child td{border-bottom:none;}
+  tbody tr:nth-child(even){background:#fbf7ee;}
+  td.u{font-weight:700; white-space:nowrap; text-align:center; color:#3f3225;}
+  td.k{color:var(--good);}
+  td.p{color:var(--bad);}
+  .none{color:#b3a68f;}
+  .warn{background:#fff8e8; border-left:4px solid #e0a800; border-radius:6px;
+    padding:12px 18px; margin:18px 0; font-size:15px; color:#6a5322;}
+  ul{margin:8px 0; padding-left:22px;} ul li{margin:5px 0;}
+  .dim{color:#7a6a52; font-size:14px;}
+  footer{margin-top:44px; padding-top:16px; border-top:1px solid var(--line);
+    color:#9a8b74; font-size:12px; text-align:center;}
+  @media (max-width:560px){
+    header h1{font-size:18px;} th,td{padding:8px 6px; font-size:13px;}
+    .chain div{font-size:13px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>兵 种 克 制 速 查</h1>
+  <p>三国群英传 V　·　谁克谁，一目了然</p>
+</header>
+
+<div class="wrap">
+
+  <div class="legend">
+    <span>数值 = 我方打敌方的<b>伤害系数</b></span>
+    <span>50 ≈ 打平</span>
+    <span><b>80 以上</b> = 克制</span>
+    <span><b>30 以下</b> = 被克死</span>
+  </div>
+
+  <div class="chain">
+    <div><span class="c1">枪兵</span> → <span class="c3">骑兵</span> → <span class="c2">步兵</span> → 弓兵 / 弩兵</div>
+    <div><span class="c2">蛮兵</span> → <span class="c3">女兵</span> → <span class="c1">猛兽兵</span> → <span class="c2">蛮兵</span>（三角死循环）</div>
+    <div><span class="c1">忍者</span> → 弓兵 · 木人铁人 · 猛兽兵　　<span class="c3">浪人 / 武士</span> → <span class="c1">忍者</span></div>
+  </div>
+
+  <h2>一、遇敌出兵（最常用）</h2>
+  <table>
+    <thead><tr><th>敌人是</th><th>你就出</th></tr></thead>
+    <tbody>
+      <tr><td class="u">步兵</td><td>骑兵、匈奴骑</td></tr>
+      <tr><td class="u">弓兵 / 弩兵</td><td>步兵、木人铁人</td></tr>
+      <tr><td class="u">枪兵</td><td>蛮兵藤甲、木人铁人、浪人武士</td></tr>
+      <tr><td class="u">骑兵</td><td><b>枪兵</b></td></tr>
+      <tr><td class="u">蛮兵 / 藤甲兵</td><td>猛兽兵、象兵</td></tr>
+      <tr><td class="u">女兵 / 近卫兵</td><td><b>蛮兵、藤甲兵</b></td></tr>
+      <tr><td class="u">猛兽兵 / 象兵</td><td>女兵、忍者</td></tr>
+      <tr><td class="u">忍者 / 隐忍</td><td><b>浪人、武士</b></td></tr>
+      <tr><td class="u">尸兵</td><td>女兵、浪人、武士</td></tr>
+      <tr><td class="u">木人 / 铁人</td><td>忍者</td></tr>
+      <tr><td class="u">黄巾兵</td><td>骑兵</td></tr>
+      <tr><td class="u">匈奴兵 / 游骑兵</td><td>枪兵</td></tr>
+      <tr><td class="u">弩车 / 投石车</td><td>步兵、木人铁人</td></tr>
+    </tbody>
+  </table>
+
+  <h2>二、每个兵种克谁、怕谁</h2>
+  <table>
+    <thead><tr><th>兵种</th><th>克（打这些占便宜）</th><th>怕（遇到要躲）</th></tr></thead>
+    <tbody>
+      <tr><td class="u">步兵</td><td class="k">弓兵、弩兵、弩车、投石车</td>
+          <td class="p">骑兵、匈奴骑、猛兽兵、象兵</td></tr>
+      <tr><td class="u">弓兵</td><td class="k none">—（纯远程，近身谁都打不过）</td>
+          <td class="p">木人铁人、步兵、忍者、匈奴骑、蛮兵、女兵、浪人</td></tr>
+      <tr><td class="u">弩兵</td><td class="k none">—（同上）</td>
+          <td class="p">木人铁人、步兵、黄巾、匈奴骑、忍者、尸兵</td></tr>
+      <tr><td class="u">枪兵</td><td class="k">骑兵、匈奴骑</td>
+          <td class="p">尸兵、木人铁人、浪人武士、蛮兵藤甲、女兵、步兵</td></tr>
+      <tr><td class="u">骑兵</td><td class="k">步兵、黄巾</td>
+          <td class="p">枪兵、尸兵、忍者</td></tr>
+      <tr><td class="u">蛮兵 / 藤甲兵</td><td class="k">女兵、近卫兵、枪兵</td>
+          <td class="p">猛兽兵、象兵、匈奴骑、尸兵、浪人武士</td></tr>
+      <tr><td class="u">女兵 / 近卫兵</td><td class="k">猛兽兵、象兵、尸兵</td>
+          <td class="p">蛮兵、藤甲兵、匈奴骑</td></tr>
+      <tr><td class="u">猛兽兵 / 象兵</td><td class="k">蛮兵、藤甲兵</td>
+          <td class="p">女兵、近卫兵、忍者、枪兵</td></tr>
+      <tr><td class="u">忍者 / 隐忍</td><td class="k">弓兵、弩兵、木人铁人、猛兽兵、象兵</td>
+          <td class="p">浪人、武士、匈奴骑、步兵</td></tr>
+      <tr><td class="u">黄巾兵</td><td class="k none">—</td>
+          <td class="p">骑兵、匈奴骑、浪人武士、猛兽兵</td></tr>
+      <tr><td class="u">匈奴兵 / 游骑兵</td><td class="k">步兵、弓兵、黄巾、弩车、投石车</td>
+          <td class="p">枪兵、木人铁人、猛兽兵、象兵</td></tr>
+      <tr><td class="u">浪人 / 武士</td><td class="k">忍者、隐忍、枪兵、尸兵</td>
+          <td class="p">骑兵</td></tr>
+      <tr><td class="u">尸兵</td><td class="k">枪兵</td>
+          <td class="p">女兵、近卫兵、浪人武士、匈奴骑、黄巾</td></tr>
+      <tr><td class="u">木人 / 铁人</td><td class="k">弓兵、弩兵、弩车、枪兵、投石车</td>
+          <td class="p">忍者、隐忍、蛮兵藤甲、骑兵</td></tr>
+      <tr><td class="u">弩车</td><td class="k none">—</td>
+          <td class="p">步兵、匈奴骑、木人铁人、尸兵、浪人、蛮兵、黄巾</td></tr>
+      <tr><td class="u">投石车</td><td class="k none">—</td>
+          <td class="p">步兵、匈奴骑、木人铁人、尸兵、骑兵、浪人、蛮兵</td></tr>
+    </tbody>
+  </table>
+
+  <div class="warn">
+    <b>同一条线里，升级版更强，但克制关系几乎不变。</b>
+    比如轻步兵→重步兵、短枪兵→长枪兵，克谁怕谁基本一样，所以看表时认"线"就行。
+  </div>
+
+  <h2>三、实用要点</h2>
+  <ul>
+    <li><b>枪兵是你的救命兵种。</b>骑兵冲锋最凶，唯一克制的就是枪兵（骑兵打枪兵只有 10%）。对面全是骑兵时，长枪兵拉满。</li>
+    <li><b>弓兵、弩兵是玻璃大炮。</b>输出高但近身极惨，一定要用步兵/枪兵护住，别让骑兵贴脸。</li>
+    <li><b>女兵克猛兽兵，猛兽兵克蛮兵，蛮兵克女兵</b>，记住这个三角，南蛮和猛兽系敌人都不怕。</li>
+    <li><b>木人、铁人不吃弓弩</b>（弓弩打铁人只有 10%），打蛮族/黄巾那种弓弩流特别好用。</li>
+    <li><b>弩车、投石车是攻城器械</b>，野战中几乎谁都打不过，别拿来对拼。</li>
+    <li>电脑 AI 出兵会看克制，所以<b>带两三种兵搭配</b>比清一色同兵种稳。</li>
+  </ul>
+
+  <footer>依据《三国群英传V》游戏本体数据整理　·　数值为伤害系数</footer>
+
+</div>
+</body>
+</html>

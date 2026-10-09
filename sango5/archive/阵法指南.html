@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>三国群英传V · 阵法指南</title>
+<style>
+  :root{ --ink:#2b2118; --line:#ded2bc; --bg:#f6f1e6; --card:#fffdf8;
+         --good:#2f8f6b; --qi:#b8860b; }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--bg); color:var(--ink); font-size:16px; line-height:1.75;
+       font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB",sans-serif;}
+  .wrap{max-width:860px; margin:0 auto; padding:0 18px 60px;}
+  header{background:linear-gradient(135deg,#3a2c1e,#5c4630); color:#f3e7cf;
+    padding:28px 18px; text-align:center; border-bottom:4px solid var(--qi);}
+  header h1{margin:0; font-size:23px; letter-spacing:4px; font-weight:700;}
+  header p{margin:6px 0 0; color:#cbb894; font-size:13px;}
+  .key{background:#eef4fa; border:1px solid #c3d6e8; border-radius:10px;
+    padding:16px 22px; margin:22px 0; box-shadow:0 2px 8px rgba(90,70,40,.06);}
+  .key h3{margin:0 0 8px; font-size:16px; color:#25527d;}
+  .key ol{margin:6px 0 0; padding-left:22px;} .key li{margin:6px 0;}
+  .key b{color:#1d4f7c;}
+  h2{font-size:17px; margin:36px 0 8px; padding-left:12px;
+     border-left:5px solid var(--qi); line-height:1.3;}
+  .sub{color:#7a6a52; font-size:14px; margin:0 0 12px;}
+  table{width:100%; border-collapse:collapse; background:var(--card);
+    border:1px solid var(--line); border-radius:10px; overflow:hidden; font-size:15px;
+    box-shadow:0 2px 8px rgba(90,70,40,.06);}
+  th,td{padding:9px 8px; border-bottom:1px solid var(--line); vertical-align:middle;}
+  th{background:#efe6d3; color:#5a4630; letter-spacing:.5px; text-align:center;}
+  tbody tr:last-child td{border-bottom:none;}
+  tbody tr:nth-child(even){background:#fbf7ee;}
+  tbody tr.top{background:#e9f6ef !important;}
+  td.nm{font-weight:700; white-space:nowrap; color:#3f3225;}
+  td.src{color:#8a5a00; font-size:14px; white-space:nowrap; text-align:center;}
+  td.use{color:#5c7a52; font-size:14px;}
+  td.pr{text-align:right; color:#7a6a52; white-space:nowrap;}
+  .ok{display:inline-block; min-width:22px; padding:0 6px; border-radius:6px;
+      background:#e6f5ec; color:#1d7a55; font-weight:700;}
+  .no{display:inline-block; min-width:22px; color:#c4b9a6;}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:10px;
+    padding:14px 20px; margin:12px 0; box-shadow:0 2px 8px rgba(90,70,40,.06);}
+  .card.hl{border-color:#9ed2b5; background:#f3fbf6;}
+  .card h4{margin:0 0 6px; font-size:16px; color:#3f3225;}
+  .card.hl h4{color:#1d7a55;}
+  .card h4 small{font-weight:400; color:#8a5a00; font-size:13px; margin-left:10px;}
+  .card p{margin:0; font-size:14.5px; color:#4a3f31;}
+  .note{background:#fff8e8; border-left:4px solid #e0a800; border-radius:6px;
+    padding:12px 18px; margin:18px 0; font-size:15px; color:#6a5322;}
+  footer{margin-top:44px; padding-top:16px; border-top:1px solid var(--line);
+    color:#9a8b74; font-size:12px; text-align:center;}
+  @media (max-width:560px){
+    header h1{font-size:18px;} th,td{padding:7px 4px; font-size:12.5px;}
+    td.use,td.src{font-size:11.5px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>阵 法 指 南</h1>
+  <p>三国群英传 V　·　8 个阵形，一张表看完</p>
+</header>
+
+<div class="wrap">
+
+  <div class="key">
+    <h3>四句话讲完阵法</h3>
+    <ol>
+      <li>开打前给<b>整支部队</b>选一个阵，全队共用，不用给每个武将单独设。</li>
+      <li>阵形只做一件事：<b>给士兵加攻击 / 防御 / 速度</b>，不改变兵种克制。</li>
+      <li><b>没有阵形相克</b>。数据里 8 个阵形只有攻、防、速三个修正值，
+          不存在"这个阵克那个阵"——挑加成最合你打法的就行。</li>
+      <li>武将<b>天生只会 4 种</b>（方形、箭矢、圆形、钩形），
+          另外 4 种要用<b>阵法书</b>学，而最强的那几个恰好都要学。</li>
+    </ol>
+  </div>
+
+  <h2>一、八个阵形对照表</h2>
+  <p class="sub">攻 / 防 / 速 是游戏内部给士兵的修正值，数字越大加成越强，0 = 不加。</p>
+  <table>
+    <thead><tr><th>阵形</th><th>攻</th><th>防</th><th>速</th><th>怎么来</th><th>适合</th></tr></thead>
+    <tbody>
+      <tr><td class="nm">方形之阵</td><td><span class="no">0</span></td><td><span class="no">0</span></td><td><span class="no">0</span></td><td class="src">自带（664 人）</td><td class="use">基础阵，没有加成，也不吃亏</td></tr>
+      <tr><td class="nm">翔鹰之阵</td><td><span class="ok">2</span></td><td><span class="ok">1</span></td><td><span class="no">0</span></td><td class="src">只能靠兵书</td><td class="use">冲锋阵，攻防同涨，人多才厉害</td></tr>
+      <tr class="top"><td class="nm">天地之阵</td><td><span class="ok">1</span></td><td><span class="ok">1</span></td><td><span class="ok">2</span></td><td class="src">只能靠兵书</td><td class="use">万能阵，攻防速全涨</td></tr>
+      <tr><td class="nm">雁形之阵</td><td><span class="no">0</span></td><td><span class="ok">1</span></td><td><span class="ok">2</span></td><td class="src">只能靠兵书</td><td class="use">包围阵，防速齐涨，要 4 将以上</td></tr>
+      <tr><td class="nm">箭矢之阵</td><td><span class="no">0</span></td><td><span class="no">0</span></td><td><span class="ok">2</span></td><td class="src">自带（71 人）</td><td class="use">突击阵，只加速度，配慢兵种</td></tr>
+      <tr><td class="nm">钩形之阵</td><td><span class="ok">2</span></td><td><span class="no">0</span></td><td><span class="no">0</span></td><td class="src">自带（44 人）</td><td class="use">强攻阵，只加攻击，3 将就能用</td></tr>
+      <tr><td class="nm">锥形之阵</td><td><span class="ok">2</span></td><td><span class="no">0</span></td><td><span class="ok">2</span></td><td class="src">只能靠兵书</td><td class="use">突破阵，攻速双涨，要 4 将以上</td></tr>
+      <tr><td class="nm">圆形之阵</td><td><span class="no">0</span></td><td><span class="ok">1</span></td><td><span class="no">0</span></td><td class="src">自带（49 人）</td><td class="use">防守阵，只加防御，怕被范围技砸</td></tr>
+    </tbody>
+  </table>
+
+  <h2>二、各阵详解（游戏原文）</h2>
+  <div class="card"><h4>方形之阵<small>攻 0　防 0　速 0</small></h4><p>方形之阵属于最基本的阵形，前排部署近战部队，后排部署远程部队是最典型的兵力配置方式。方形之阵在使用上并没有特别的优缺点，稳扎稳打就是它最大的特色，在初期战力较弱时也很容易运用。</p></div>
+  <div class="card"><h4>翔鹰之阵<small>攻 2　防 1　速 0</small></h4><p>翔鹰之阵能够同时提升我军士兵攻击力、防御力，是相当强力的高等冲锋阵形，适合猛将集团进行强袭，具有快速冲散敌军阵势的功效。值得注意的是，如果部队的整体战力不足将使效果大打折扣，但到了后期战力强大时，翔鹰之阵将是扫荡敌军的极佳选择。</p></div>
+  <div class="card hl"><h4>天地之阵<small>攻 1　防 1　速 2</small></h4><p>天地之阵是同时提升我军士兵防御力、攻击力、移动速度的高等阵型，几乎适合任何战术。前方横队攻时可冲锋开路、守时可作后方部队的屏障，后方部队则可自由搭配远程或近战军种，随时提供支援或掩护的火力。</p></div>
+  <div class="card"><h4>雁形之阵<small>攻 0　防 1　速 2</small></h4><p>雁形之阵是能够同时提升士兵防御力、移动速度的高等阵型。由于大部分的兵力都集中于左右两军，且左右两军具有包围夹击与上下延伸的机动性，在快速突入敌军阵营后，可以立即产生包围的效果。使用此阵要特别注意，避免敌军突破阵形中央的空隙，将我军分割为2。要发挥雁形之阵的包围，至少要能够组成四名武将以上的部队。</p></div>
+  <div class="card"><h4>箭矢之阵<small>攻 0　防 0　速 2</small></h4><p>箭矢之阵是重视速度的阵形，适合搭配移动速度慢的近战兵种，用来突击不擅近战的远程部队时，更有意想不到的奇效。要留意的是，若我军各兵种速度差距太大，使用箭矢之阵容易造成各部队距离过远，无法相互支援，敌军便有各个击破的机会。</p></div>
+  <div class="card"><h4>钩形之阵<small>攻 2　防 0　速 0</small></h4><p>钩形之阵是重视攻击的阵形，成犄角之势的冲锋状态，可以提高我军士兵的攻击力。建议殿后的小队采用耐久力较高的军种，以免遭到敌军冲散阵形。在初期，武将只能组成3人左右的部队时，就能发挥钩形之阵的效果，是它的一大优点。</p></div>
+  <div class="card"><h4>锥形之阵<small>攻 2　防 0　速 2</small></h4><p>锥形之阵是能够同时提升我军士兵攻击力、移动速度的高等阵型，主要特色在于兵力集中于中央纵队，在突破敌军的前锋防线时效果惊人。适合对付前锋薄弱、后方却有强大远程火力的敌军。锥形之阵至少要有四名以上的武将才容易发挥出效果。</p></div>
+  <div class="card"><h4>圆形之阵<small>攻 0　防 1　速 0</small></h4><p>圆形之阵是重视防御的阵形，各部队互相连接，可以使士兵的防御力上升。两翼的小队可以部署速度较快的兵种，以机动支援中央移动较不灵活的部队。由于兵力过于密集，在遭受集中型的武将技攻击时容易造成大量的伤亡，这点是使用圆形之阵时必须注意的。</p></div>
+
+  <h2>三、阵法书在哪</h2>
+  <p class="sub">八本兵书都是消耗品，用掉就学会对应阵形（全势力通用）。</p>
+  <table>
+    <thead><tr><th>兵书</th><th>学会的阵</th><th>价值</th></tr></thead>
+    <tbody>
+      <tr><td class="nm">方形阵法书</td><td class="use">方形之阵</td><td class="pr">100</td></tr>
+      <tr><td class="nm">翔鹰阵法书</td><td class="use">翔鹰之阵</td><td class="pr">4000</td></tr>
+      <tr><td class="nm">天地阵法书</td><td class="use">天地之阵</td><td class="pr">4000</td></tr>
+      <tr><td class="nm">雁形阵法书</td><td class="use">雁形之阵</td><td class="pr">4000</td></tr>
+      <tr><td class="nm">箭矢阵法书</td><td class="use">箭矢之阵</td><td class="pr">1000</td></tr>
+      <tr><td class="nm">钩形阵法书</td><td class="use">钩形之阵</td><td class="pr">1000</td></tr>
+      <tr><td class="nm">锥形阵法书</td><td class="use">锥形之阵</td><td class="pr">4000</td></tr>
+      <tr><td class="nm">圆形阵法书</td><td class="use">圆形之阵</td><td class="pr">1000</td></tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    <b>怎么选：</b>想要全能就<b>天地之阵</b>（攻防速全加，唯一一个三项都加的）；
+    想一波推平就<b>锥形之阵</b>（攻速拉满，突破前锋最狠）；
+    将少（3 人以下）时用<b>钩形之阵</b>——它是低级阵里唯一一个能立刻见效的强攻阵。
+  </div>
+
+  <footer>依据《三国群英传V》游戏本体数据整理　·　共 8 个可用阵形</footer>
+
+</div>
+</body>
+</html>

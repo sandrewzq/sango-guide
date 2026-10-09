@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>三国群英传V · 官职册封指南</title>
+<style>
+  :root{
+    --ink:#2b2118; --line:#ded2bc; --bg:#f6f1e6; --card:#fffdf8;
+    --wu:#8c3a2e; --wen:#2f5f8c; --good:#2f8f6b; --bad:#c0392b; --qi:#b8860b;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink); font-size:16px; line-height:1.75;
+    font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB",sans-serif;
+  }
+  .wrap{max-width:900px; margin:0 auto; padding:0 18px 60px;}
+  header{
+    background:linear-gradient(135deg,#3a2c1e,#5c4630); color:#f3e7cf;
+    padding:28px 18px; text-align:center; border-bottom:4px solid var(--qi);
+  }
+  header h1{margin:0; font-size:23px; letter-spacing:4px; font-weight:700;}
+  header p{margin:6px 0 0; color:#cbb894; font-size:13px;}
+
+  .key{background:#eef7f1; border:1px solid #b7dcc7; border-radius:10px;
+    padding:16px 22px; margin:22px 0; box-shadow:0 2px 8px rgba(90,70,40,.06);}
+  .key h3{margin:0 0 8px; font-size:16px; color:#22684a;}
+  .key p{margin:6px 0;}
+  .key .hl{color:#1d7a55; font-weight:700;}
+
+  h2{font-size:17px; margin:34px 0 12px; padding-left:12px;
+     border-left:5px solid var(--qi); line-height:1.3;}
+
+  table{width:100%; border-collapse:collapse; background:var(--card);
+    border:1px solid var(--line); border-radius:10px; overflow:hidden; font-size:15px;
+    box-shadow:0 2px 8px rgba(90,70,40,.06);}
+  th,td{padding:9px 8px; text-align:center; border-bottom:1px solid var(--line);}
+  th{background:#efe6d3; color:#5a4630; letter-spacing:.5px;}
+  tbody tr:last-child td{border-bottom:none;}
+  tbody tr:nth-child(even){background:#fbf7ee;}
+  td.wu{color:var(--wu); font-weight:700;}
+  td.wen{color:var(--wen); font-weight:700;}
+  td.cum{color:#8a5a00; font-weight:700;}
+  .rk{font-weight:700; color:#3f3225;}
+  td.gens{font-weight:700; color:#1d7a55;}
+  tr.mark{background:#e6f5ec !important;}
+  tr.mark td{border-top:2px solid #8ec7a7; border-bottom:2px solid #8ec7a7;}
+  tr.grey td{color:#8d8172;}
+  tr.grey td.gens{color:#8d8172; font-weight:400;}
+
+  .warn{background:#fff8e8; border-left:4px solid #e0a800; border-radius:6px;
+    padding:12px 18px; margin:18px 0; font-size:15px; color:#6a5322;}
+  .danger{background:#fdeeee; border-left:4px solid #c0392b; border-radius:6px;
+    padding:12px 18px; margin:18px 0; font-size:15px; color:#7a2b22;}
+  .rules{background:var(--card); border:1px solid var(--line); border-radius:10px;
+    padding:16px 22px; margin:20px 0; box-shadow:0 2px 8px rgba(90,70,40,.06);}
+  .rules ol{margin:0; padding-left:22px;} .rules li{margin:7px 0;}
+  .rules b{color:#8a5a00;}
+  ul{margin:8px 0; padding-left:22px;} ul li{margin:5px 0;}
+  .dim{color:#7a6a52; font-size:14px;}
+  .tag{display:inline-block; padding:1px 9px; border-radius:20px; font-size:13px;
+    background:#efe6d3; color:#6b5433;}
+  footer{margin-top:44px; padding-top:16px; border-top:1px solid var(--line);
+    color:#9a8b74; font-size:12px; text-align:center;}
+  @media (max-width:560px){
+    header h1{font-size:18px;} th,td{padding:7px 3px; font-size:12px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>官 职 册 封 指 南</h1>
+  <p>三国群英传 V　·　目标：尽快把带将数顶满</p>
+</header>
+
+<div class="wrap">
+
+  <div class="key">
+    <h3>先记这一条：带将数只看官阶</h3>
+    <p>带将数和封哪个官职、花多少功勋<b>无关</b>，只跟<b>官阶</b>挂钩：</p>
+    <p style="text-align:center; font-size:15px;">
+      官阶 1–2 → 带 <b>1</b> 支　｜　3–4 → <b>2</b> 支　｜　5–6 → <b>3</b> 支　｜　7 → <b>4</b> 支　｜
+      <span class="hl">官阶 8 起 → 带满 5 支（上限）</span>
+    </p>
+    <p>所以真正该做的是 <span class="hl">尽快把官阶顶到 8</span>（只要武将 22 级），
+       满编就到位了，<b>累计约 4,800 功勋</b>。</p>
+    <p>官阶 9～14 带将数<b>一点不涨</b>，只加属性 / 技能，功勋不急可以往后放。</p>
+  </div>
+
+  <h2>一、逐级表：每阶封最便宜的</h2>
+  <table>
+    <thead>
+      <tr><th>官阶</th><th>需武将级</th><th>带将数</th><th>猛将线（武官）</th><th>智将线（文官）</th><th>累计功勋</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="rk">1</td><td>Lv1</td><td class="gens">1</td><td class="wu">校尉 · 0</td><td class="wen">长史 · 0</td><td class="cum">0</td></tr>
+      <tr><td class="rk">2</td><td>Lv4</td><td class="gens">1</td><td class="wu">虎烈将军 · 65</td><td class="wen">黄门令 · 65</td><td class="cum">65</td></tr>
+      <tr><td class="rk">3</td><td>Lv7</td><td class="gens">2</td><td class="wu">伏波将军 · 170</td><td class="wen">议郎 · 170</td><td class="cum">235</td></tr>
+      <tr><td class="rk">4</td><td>Lv10</td><td class="gens">2</td><td class="wu">横江将军 · 330</td><td class="wen">郎中 · 330</td><td class="cum">565</td></tr>
+      <tr><td class="rk">5</td><td>Lv13</td><td class="gens">3</td><td class="wu">折冲将军 · 550</td><td class="wen">博士 · 550</td><td class="cum">1115</td></tr>
+      <tr><td class="rk">6</td><td>Lv16</td><td class="gens">3</td><td class="wu">振武将军 · 840</td><td class="wen">羽林监 · 840</td><td class="cum">1955</td></tr>
+      <tr><td class="rk">7</td><td>Lv19</td><td class="gens">4</td><td class="wu">武卫将军 · 1200</td><td class="wen">中常侍 · 1240</td><td class="cum">3155</td></tr>
+      <tr class="mark"><td class="rk">8</td><td>Lv22</td><td class="gens">5</td><td class="wu">镇军将军 · 1650</td><td class="wen">御史中丞 · 1750</td><td class="cum">4805</td></tr>
+      <tr class="grey"><td class="rk">9</td><td>Lv25</td><td>5</td><td>奋武将军 · 2050</td><td>侍中 · 2150</td><td class="cum">6855</td></tr>
+      <tr class="grey"><td class="rk">10</td><td>Lv28</td><td>5</td><td>奋威将军 · 2800</td><td>尚书令 · 2900</td><td class="cum">9655</td></tr>
+      <tr class="grey"><td class="rk">11</td><td>Lv31</td><td>5</td><td>征北将军 · 3900</td><td>司空 · 3900</td><td class="cum">13555</td></tr>
+      <tr class="grey"><td class="rk">12</td><td>Lv34</td><td>5</td><td>右将军 · 4800</td><td>太尉 · 4300</td><td class="cum">18355</td></tr>
+      <tr class="grey"><td class="rk">13</td><td>Lv37</td><td>5</td><td>骠骑将军 · 6600</td><td>司徒 · 6200</td><td class="cum">24955</td></tr>
+      <tr class="grey"><td class="rk">14</td><td>Lv40</td><td>5</td><td>大将军 · 8100</td><td>丞相 · 8100</td><td class="cum">33055</td></tr>
+    </tbody>
+  </table>
+  <p class="dim">
+    绿框那行是<b>性价比拐点</b>：官阶 8 带将满、才花 4,800（武官线）。
+    再往下的灰行，带将数不再变，纯粹是加成，累计要一路涨到 3.3 万。
+    「累计功勋」按武官线算，文官线几乎一样（到官阶8约 4,950）。
+  </p>
+
+  <h2>二、省钱的关键：同一官阶里挑最便宜的</h2>
+  <p>
+    每个官阶有十几个官职，<b>贵的能到便宜的 2～3 倍，但带将数完全一样</b>。
+    多花的功勋只换来属性、技能和阵型。只想顶带将数，就认准最便宜那档。
+  </p>
+  <table>
+    <thead><tr><th>官阶</th><th>最便宜</th><th>最贵</th><th>多花</th></tr></thead>
+    <tbody>
+      <tr><td class="rk">7</td><td>1200</td><td>2100</td><td>+900</td></tr>
+      <tr><td class="rk">8</td><td>1650</td><td>3800</td><td>+2150</td></tr>
+      <tr><td class="rk">9</td><td>2050</td><td>5000</td><td>+2950</td></tr>
+      <tr><td class="rk">10</td><td>2800</td><td>3350</td><td>+550</td></tr>
+      <tr><td class="rk">13</td><td>6200</td><td>7100</td><td>+900</td></tr>
+    </tbody>
+  </table>
+
+  <h2>三、四条硬规则</h2>
+  <div class="rules">
+    <ol>
+      <li><b>只能逐级升，不能跳级。</b>官阶 1→2→…→14，一次往上一阶。</li>
+      <li><b>武将等级卡门槛</b>：官阶 2/3/4… 各要武将 4/7/10… 级（每阶 +3）。</li>
+      <li><b>武力 / 智力要落在区间内。</b>42 个文官里 33 个武力上限只有 50～80，武力练太高就<b>封不了文官</b>；武官同样大多卡智力上限。</li>
+      <li>每次册封<b>花掉</b>对应的功勋，官阶越高越贵。</li>
+    </ol>
+  </div>
+  <div class="danger">
+    <b>千万别乱撤销官职。</b>游戏原文：<b>「撤销官职将失去目前累积的功勋」</b>，
+    而且会打回<b>侍郎</b>（最低阶）。花掉的功勋<b>不退</b>，等于从零再来。
+    <div style="margin-top:8px;">
+      <b>官职给的加成不是永久的</b>——体力 / 技力 / 武力 / 智力 / 速度、阵型、附加武将技、
+      附加军师技、兵种、<b>带将数</b>全都是"挂职期间生效"，跟装备一样。
+      撤销或换官就换成新官职那套，<b>撤销时带将数会直接从 5 掉回 1</b>。
+    </div>
+  </div>
+  <div class="warn">
+    <b>玩异族势力亏一档。</b>匈奴 / 南蛮 / 日出的官职，同官阶比汉族<b>少带 1 支</b>：
+    官阶 7 只有 3、官阶 8 只有 4，要顶到<b>官阶 9</b> 才满 5。
+  </div>
+
+  <h2>四、两个实用机制</h2>
+  <ul>
+    <li><b>自动册封（高 / 低）</b>：低册封＝自动挑<b>消耗功勋最少</b>的官职，想省钱就用它一路自动封。</li>
+    <li><b>每季有名额</b>：提示「本季尚可册封的武将共 N 位」，册封有次数上限，别指望一回合封完全军团。</li>
+  </ul>
+
+  <h2>五、名将专属称号（终点，不加带将）</h2>
+  <ul>
+    <li>官阶15 · 需武将 40 级 · <b>8200 功勋</b>：刘备→<span class="tag">汉中王</span>、关羽→<span class="tag">汉寿亭侯</span>、曹操→<span class="tag">魏王</span>…</li>
+    <li>官阶16 · 需武将 50 级 · <b>35000 功勋</b>：刘备→<span class="tag">蜀汉昭烈帝</span>、关羽→<span class="tag">忠义武圣</span>、曹操→<span class="tag">魏武帝</span>…</li>
+  </ul>
+  <p class="dim">带将数也还是 5——它们卖的是属性和技能，是富裕之后的追求，不是刚需。</p>
+
+  <h2>六、功勋从哪来</h2>
+  <ul>
+    <li>主要靠<b>打仗</b>，战后结算显示「所得功勋值」。</li>
+    <li>另有经验值按比例折算成功勋，所以<b>多打硬仗、多练级</b>是唯一来源。</li>
+    <li>功勋<b>每个武将各自积累</b>，封官只花自己的那份。</li>
+  </ul>
+
+  <footer>依据《三国群英传V》游戏本体数据整理　·　带将数上限为 5</footer>
+
+</div>
+</body>
+</html>

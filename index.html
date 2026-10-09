@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>三国群英传 · 系列攻略</title>
+<style>
+  :root{ --ink:#2b2118; --line:#ded2bc; --bg:#f6f1e6; --card:#fffdf8; --qi:#b8860b;
+         --good:#2f8f6b; --mute:#8a7a5e; --dim:#7a6a52; }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--bg); color:var(--ink); font-size:16px; line-height:1.75;
+       font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB",sans-serif;}
+
+  header{background:linear-gradient(135deg,#3a2c1e,#5c4630); color:#f3e7cf;
+         padding:56px 20px 48px; text-align:center; border-bottom:4px solid var(--qi);}
+  header h1{margin:0; font-size:30px; letter-spacing:9px; font-weight:700;}
+  header .en{margin:12px 0 0; font-size:12px; letter-spacing:3px; color:#c9b48e;
+             text-transform:uppercase;}
+  header p{margin:16px auto 0; max-width:580px; color:#dbc9a6; font-size:14.5px; line-height:1.8;}
+
+  .wrap{max-width:980px; margin:0 auto; padding:0 20px 72px;}
+
+  .sec-t{margin:44px 0 0; padding:12px 20px; border-radius:10px; text-align:center;
+         background:linear-gradient(135deg,#3a2c1e,#5c4630); color:#f3e7cf;
+         font-size:15px; letter-spacing:6px; border-bottom:4px solid var(--qi);}
+
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+        gap:22px; margin-top:24px;}
+
+  .gen{background:var(--card); border:1px solid var(--line); border-radius:12px;
+       overflow:hidden; box-shadow:0 2px 10px rgba(90,70,40,.07);
+       display:flex; flex-direction:column;}
+  .gen-h{padding:15px 22px; border-bottom:1px solid var(--line);
+         background:linear-gradient(135deg,#efe6d3,#f8f2e5);}
+  .gen-h .no{font-size:11.5px; letter-spacing:2.5px; color:var(--qi); font-weight:700;}
+  .gen-h h2{margin:3px 0 0; font-size:19px; letter-spacing:2px; color:#4a3a26;}
+  .gen-h .sub{margin:2px 0 0; font-size:12.5px; color:var(--mute); letter-spacing:.5px;}
+
+  .gen-b{padding:18px 22px 20px; flex:1; display:flex; flex-direction:column;}
+  .gen-b p{margin:0 0 14px; font-size:14.5px; color:#5d5041;}
+
+  .stats{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 18px;}
+  .stats span{background:#f2ebdb; border:1px solid #e2d6bd; border-radius:20px;
+              padding:3px 12px; font-size:12.5px; color:#6b5943;}
+  .stats b{color:#8a5a00;}
+
+  .go{display:block; text-align:center; padding:11px 18px; border-radius:9px;
+      background:#8a5a00; color:#fff8e7; text-decoration:none; font-size:15px;
+      letter-spacing:3px; font-weight:700; transition:.15s;}
+  .go:hover{background:#a06a00;}
+  .go.ghost{background:transparent; color:#8a5a00; border:1.5px solid #d9c9a4;
+            letter-spacing:2px; font-weight:400; font-size:14px;}
+  .go.ghost:hover{background:#f5ecd9; border-color:#c4ac7e;}
+
+  .links{margin:16px 0 0; padding:0; list-style:none;
+         border-top:1px dashed #e2d6bd; padding-top:12px;}
+  .links li{margin:0 0 7px; font-size:13.5px; line-height:1.6;}
+  .links a{color:#2f5f8c; text-decoration:none; border-bottom:1px solid #cddced;}
+  .links a:hover{color:#8a5a00; border-bottom-color:#e0cfa4;}
+  .links .tag{display:inline-block; min-width:74px; color:var(--mute); font-size:12.5px;}
+  .links .mute{color:var(--dim);}
+
+  .soon{opacity:.5;}
+  .soon .go{pointer-events:none; background:#d8cdb8; color:#f6f1e6;}
+  .badge{display:inline-block; background:#2f8f6b; color:#fff; font-size:11px;
+         letter-spacing:1.5px; padding:2px 9px; border-radius:10px; vertical-align:2px;
+         margin-left:8px; font-weight:400;}
+
+  .note{margin:40px 0 0; padding:18px 24px; background:#fffdf8;
+        border:1px solid var(--line); border-left:5px solid var(--qi);
+        border-radius:10px; font-size:13.5px; color:#6b5943;}
+  .note h3{margin:0 0 8px; font-size:14.5px; color:#4a3a26; letter-spacing:1px;}
+  .note ul{margin:0; padding-left:20px;} .note li{margin:5px 0;}
+  .note a{color:#2f5f8c;}
+
+  footer{margin:34px 0 0; text-align:center; color:var(--mute); font-size:12.5px;
+         line-height:1.9;}
+
+  @media (max-width:560px){
+    header h1{font-size:23px; letter-spacing:5px;}
+    .wrap{padding:0 14px 50px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>三国群英传</h1>
+  <div class="en">Heroes of the Three Kingdoms · Series Guide</div>
+  <p>系列各代的完整攻略、可搜索数据速查表，以及从游戏本体提取的原始数据。<br>纯静态页面，离线可用。</p>
+</header>
+
+<div class="wrap">
+
+  <div class="sec-t">各 代 攻 略</div>
+
+  <div class="grid">
+
+    <!-- ================= 第五代 ================= -->
+    <div class="gen">
+      <div class="gen-h">
+        <div class="no">第五代</div>
+        <h2>三国群英传 V<span class="badge">已完成</span></h2>
+        <div class="sub">Sango5 &nbsp;·&nbsp; 9 章 · 4 篇</div>
+      </div>
+      <div class="gen-b">
+        <p>从开局选剧本到内政、打仗、装备技能，全景式攻略，内置全文搜索与侧边目录。</p>
+
+        <div class="stats">
+          <span>武将 <b>901</b></span>
+          <span>兵种 <b>58</b></span>
+          <span>物品 <b>417</b></span>
+          <span>军师技 <b>107</b></span>
+          <span>官职 <b>188</b></span>
+        </div>
+
+        <a class="go" href="sango5/index.html">进 入 完 全 攻 略</a>
+
+        <ul class="links">
+          <li><span class="tag">数据速查</span><a href="sango5/data/数据速查.html">可搜索数据总表</a></li>
+          <li><span class="tag">原始数据</span><a href="sango5/data/武将列表.csv">武将</a> ·
+              <a href="sango5/data/兵种列表.csv">兵种</a> ·
+              <a href="sango5/data/兵种克制表.csv">兵种克制</a> ·
+              <a href="sango5/data/物品列表.csv">物品</a></li>
+          <li><span class="tag"></span><a href="sango5/data/军师技列表.csv">军师技</a> ·
+              <a href="sango5/data/城市列表.csv">城市</a> ·
+              <a href="sango5/data/官职列表.csv">官职</a>
+              <span class="mute">— 7 份 CSV，UTF-8</span></li>
+          <li><span class="tag">旧版存档</span><a href="sango5/archive/">9 篇单篇图文</a>
+              <span class="mute">— 主攻略合并前的版本</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ================= 后续 ================= -->
+    <div class="gen soon">
+      <div class="gen-h">
+        <div class="no">后续各代</div>
+        <h2>三国群英传 VI · VII …</h2>
+        <div class="sub">目录已预留：<code>sango6/</code>、<code>sango7/</code></div>
+      </div>
+      <div class="gen-b">
+        <p>每一代各自一个目录，攻略与原始数据同级存放，互不干扰。整理好一代就补一代。</p>
+        <a class="go" href="#">整 理 中</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="note">
+    <h3>说明</h3>
+    <ul>
+      <li><b>数据来源</b>：全部由游戏本体的数据包（<code>GameData.PCK</code> / <code>Patch.pck</code>）解包提取，非人工抄录，含隐藏与未启用条目。</li>
+      <li><b>原始数据</b>：每代 <code>data/</code> 下为 UTF-8 编码的 CSV，可直接用 Excel、Vim、脚本读取；上游文件为 GBK 或二进制时已统一转换。</li>
+      <li><b>离线可用</b>：所有页面样式内联、无外部依赖，下载整个仓库双击即看，不需要联网。</li>
+      <li><b>版权</b>：游戏名称、数据与素材版权归宇峻奥汀科技（UserJoy Technology）所有，本仓库仅作学习与交流用途。</li>
+    </ul>
+  </div>
+
+  <footer>
+    三国群英传 系列攻略 · Heroes of the Three Kingdoms Series Guide<br>
+    <a href="https://github.com/sandrewzq/sango-guide" style="color:#8a7a5e;">GitHub 仓库</a>
+  </footer>
+
+</div>
+
+</body>
+</html>

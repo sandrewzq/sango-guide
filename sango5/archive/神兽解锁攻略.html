@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>三国群英传V · 神兽解锁</title>
+<style>
+  :root{
+    --ink:#2b2118; --line:#ded2bc; --bg:#f6f1e6; --card:#fffdf8;
+    --qing:#2f8f6b; --bai:#7d8798; --xuan:#3a5a8c; --zhu:#c0392b; --qi:#b8860b;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink); font-size:16px; line-height:1.75;
+    font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB",sans-serif;
+  }
+  .wrap{max-width:820px; margin:0 auto; padding:0 18px 60px;}
+  header{
+    background:linear-gradient(135deg,#3a2c1e,#5c4630); color:#f3e7cf;
+    padding:30px 18px; text-align:center; border-bottom:4px solid var(--qi);
+  }
+  header h1{margin:0; font-size:24px; letter-spacing:4px; font-weight:700;}
+  header p{margin:6px 0 0; color:#cbb894; font-size:13px;}
+
+  .flow{
+    display:flex; flex-wrap:wrap; justify-content:center; align-items:center;
+    gap:8px; margin:26px 0; font-size:15px;
+  }
+  .flow span{
+    background:var(--card); border:1px solid var(--line); border-radius:20px;
+    padding:6px 16px; white-space:nowrap;
+  }
+  .flow .arw{color:#b8a583; border:none; background:none; padding:0 2px;}
+
+  table{width:100%; border-collapse:collapse; background:var(--card);
+    border:1px solid var(--line); border-radius:10px; overflow:hidden; font-size:15px;
+    box-shadow:0 2px 8px rgba(90,70,40,.06);}
+  th,td{padding:12px 10px; text-align:center; border-bottom:1px solid var(--line);}
+  th{background:#efe6d3; color:#5a4630; letter-spacing:.5px;}
+  tbody tr:last-child td{border-bottom:none;}
+  tbody tr:nth-child(even){background:#fbf7ee;}
+  td.beast{font-weight:700; border-left:6px solid #999;}
+  tr.qing td.beast{color:var(--qing); border-left-color:var(--qing);}
+  tr.bai  td.beast{color:var(--bai);  border-left-color:var(--bai);}
+  tr.xuan td.beast{color:var(--xuan); border-left-color:var(--xuan);}
+  tr.zhu  td.beast{color:var(--zhu);  border-left-color:var(--zhu);}
+  tr.qi   td.beast{color:#96700a;     border-left-color:var(--qi);}
+  .item{color:#8a5a00; font-weight:700;}
+
+  h2{font-size:17px; margin:38px 0 12px; padding-left:12px;
+     border-left:5px solid var(--qi); line-height:1.3;}
+  .warn{background:#fff8e8; border-left:4px solid #e0a800; border-radius:6px;
+    padding:12px 18px; margin:20px 0; font-size:15px; color:#6a5322;}
+  ul{margin:8px 0; padding-left:22px;}
+  ul li{margin:6px 0;}
+  .dim{color:#7a6a52; font-size:14px;}
+  footer{margin-top:44px; padding-top:16px; border-top:1px solid var(--line);
+    color:#9a8b74; font-size:12px; text-align:center;}
+  @media (max-width:560px){
+    header h1{font-size:19px;} th,td{padding:9px 5px; font-size:13px;}
+    .flow{font-size:13px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>神 兽 解 锁</h1>
+  <p>三国群英传 V　青龙 · 白虎 · 玄武 · 朱雀 · 麒麟</p>
+</header>
+
+<div class="wrap">
+
+  <div class="flow">
+    <span>占下指定城</span><span class="arw">→</span>
+    <span>打分身</span><span class="arw">→</span>
+    <span>开塔</span><span class="arw">→</span>
+    <span>打本尊</span><span class="arw">→</span>
+    <span>得神器</span>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>神兽</th><th>要打的城</th><th>城边秘地</th><th>开启的塔</th><th>神器 / 武将技</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="qing"><td class="beast">青龙</td><td>建业</td><td>毒龙潭</td><td>青龙塔</td>
+        <td><span class="item">青龙逆鳞</span><br class="dim">青龙飞升</td></tr>
+      <tr class="bai"><td class="beast">白虎</td><td>江州</td><td>猛虎穴</td><td>白虎塔</td>
+        <td><span class="item">白虎银牙</span><br>白虎傲啸</td></tr>
+      <tr class="xuan"><td class="beast">玄武</td><td>平原</td><td>大雪山</td><td>玄武塔</td>
+        <td><span class="item">玄武灵壳</span><br>玄武怒流</td></tr>
+      <tr class="zhu"><td class="beast">朱雀</td><td>交趾</td><td>火焰山</td><td>朱雀塔</td>
+        <td><span class="item">朱雀炎羽</span><br>朱雀焚天</td></tr>
+      <tr class="qi"><td class="beast">麒麟</td><td>襄阳</td><td>兽神洞</td><td>麒麟塔</td>
+        <td><span class="item">麒麟金角</span><br>麒麟降世</td></tr>
+    </tbody>
+  </table>
+
+  <p class="dim" style="margin-top:12px;">
+    塔的方位：青龙塔在吴以北、白虎塔在成都以西、玄武塔在平原西北、朱雀塔在桂林以南、麒麟塔在白帝东北。
+    五件神器都是最高稀有度，附带召唤该神兽兵种的能力。
+  </p>
+
+  <h2>流程</h2>
+  <ul>
+    <li>打下表里那座城，太守会报「异象」，秘地就开了。</li>
+    <li>去秘地打败<b>分身</b>（影青龙这类），塔随之开启。</li>
+    <li>进塔打败<b>本尊</b>，领取神器。</li>
+  </ul>
+  <div class="warn">
+    <b>打输就白打</b>——这一战不保留进度，得重新练级再来，所以别硬闯，主力成型后再上本尊。
+  </div>
+
+  <h2>另外三个地点</h2>
+  <ul>
+    <li><b>桃源仙乡</b>（占武陵）——天界仙法、木人力士</li>
+    <li><b>尸洞</b>（占徐州）——放出幽魂，通往九泉之渊</li>
+    <li><b>九泉之渊</b>（占下邳）——<b>复活已死的武将</b>，想找回老将就走这条线</li>
+  </ul>
+
+  <h2>小提示</h2>
+  <ul>
+    <li>分身可以早打，本尊留到主力成型。</li>
+    <li>青龙东、白虎西、玄武北、朱雀南、麒麟中，找不到塔就按方位推。</li>
+    <li>占下的触发城别马上丢，否则异象没下文。</li>
+    <li>五兽集齐后，多名武将各带一件神器同时上阵，还有合体大招。</li>
+  </ul>
+
+  <footer>依据《三国群英传V》游戏本体数据整理</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>三国群英传V · 书籍秘籍图鉴</title>
+<style>
+  :root{
+    --ink:#2b2118; --line:#ded2bc; --bg:#f6f1e6; --card:#fffdf8;
+    --sk:#2f5f8c; --qi:#b8860b;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink); font-size:16px; line-height:1.75;
+    font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB",sans-serif;
+  }
+  .wrap{max-width:900px; margin:0 auto; padding:0 18px 60px;}
+  header{
+    background:linear-gradient(135deg,#3a2c1e,#5c4630); color:#f3e7cf;
+    padding:28px 18px; text-align:center; border-bottom:4px solid var(--qi);
+  }
+  header h1{margin:0; font-size:23px; letter-spacing:4px; font-weight:700;}
+  header p{margin:6px 0 0; color:#cbb894; font-size:13px;}
+
+  .key{background:#eef4fa; border:1px solid #c3d6e8; border-radius:10px;
+    padding:16px 22px; margin:22px 0; box-shadow:0 2px 8px rgba(90,70,40,.06);}
+  .key h3{margin:0 0 8px; font-size:16px; color:#25527d;}
+  .key ol{margin:6px 0 0; padding-left:22px;}
+  .key li{margin:6px 0;}
+  .key b{color:#1d4f7c;}
+
+  h2{font-size:17px; margin:36px 0 8px; padding-left:12px;
+     border-left:5px solid var(--qi); line-height:1.3;}
+  .sub{color:#7a6a52; font-size:14px; margin:0 0 12px;}
+
+  table{width:100%; border-collapse:collapse; background:var(--card);
+    border:1px solid var(--line); border-radius:10px; overflow:hidden; font-size:15px;
+    box-shadow:0 2px 8px rgba(90,70,40,.06);}
+  th,td{padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top;}
+  th{background:#efe6d3; color:#5a4630; letter-spacing:.5px; text-align:center;}
+  tbody tr:last-child td{border-bottom:none;}
+  tbody tr:nth-child(even){background:#fbf7ee;}
+  td.nm{font-weight:700; white-space:nowrap; color:#3f3225; width:26%;}
+  td.lv{text-align:center; color:#8a5a00; white-space:nowrap; width:10%;}
+  td.sk{color:var(--sk);}
+  td.pr{text-align:right; color:#7a6a52; white-space:nowrap; width:15%;}
+  tr.rare{background:#fdf6e3 !important;}
+  tr.rare td.nm{color:#96700a;}
+  .star{color:var(--qi); margin-left:4px; font-size:13px;}
+  .note{background:#fff8e8; border-left:4px solid #e0a800; border-radius:6px;
+    padding:12px 18px; margin:18px 0; font-size:15px; color:#6a5322;}
+  a{color:#2f5f8c;}
+  footer{margin-top:44px; padding-top:16px; border-top:1px solid var(--line);
+    color:#9a8b74; font-size:12px; text-align:center;}
+  @media (max-width:560px){
+    header h1{font-size:18px;} th,td{padding:7px 5px; font-size:12.5px;}
+    td.nm{width:auto;} td.lv{width:auto;} td.pr{width:auto;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>书 籍 秘 籍 图 鉴</h1>
+  <p>三国群英传 V　·　184 件道具全解，谁教什么一目了然</p>
+</header>
+
+<div class="wrap">
+
+  <div class="key">
+    <h3>先弄清「道具」怎么用</h3>
+    <ol>
+      <li>书、法器、宝珠、战鼓……在游戏里统统归入 <b>道具</b> 一类，是给武将<b>装备</b>用的，不是消耗品。</li>
+      <li>一个武将只有 <b>1 个道具栏</b>（另外武器、坐骑各 1 格），所以<b>一次只能带一件</b>，得挑。</li>
+      <li>名称前的「N 级」是<b>装备门槛</b>——武将等级不到，装不上去。</li>
+      <li>技能和属性都是<b>「附加」</b>的：装上才有，<b>卸下来就没了</b>，跟官职一个道理，不是永久学会。</li>
+      <li>表里的「价值」是基准价，带 ★ 的是高稀有度，正常买不到。</li>
+    </ol>
+  </div>
+
+  <h2>一、属性书：直接抬高武将本身</h2>
+  <p class="sub">不加技能，纯粹给智力 / 体力 / 速度。智力越高，军师技放得越多、越强，所以文官优先。</p>
+  <table>
+    <thead><tr><th>名称</th><th>需等级</th><th>附加</th><th>价值</th></tr></thead>
+    <tbody>
+      <tr><td class="nm">春秋左传</td><td class="lv">5</td><td class="sk">智力+3</td><td class="pr">500</td></tr>
+      <tr><td class="nm">西蜀地形图</td><td class="lv">10</td><td class="sk">体力上限+35</td><td class="pr">1000</td></tr>
+      <tr><td class="nm">史记</td><td class="lv">10</td><td class="sk">智力+5</td><td class="pr">800</td></tr>
+      <tr><td class="nm">孟德新书</td><td class="lv">15</td><td class="sk">智力+8</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">木牛</td><td class="lv">15</td><td class="sk">速度+1</td><td class="pr">3500</td></tr>
+      <tr><td class="nm">流马</td><td class="lv">15</td><td class="sk">速度+1</td><td class="pr">3500</td></tr>
+      <tr><td class="nm">青囊书</td><td class="lv">20</td><td class="sk">体力上限+50</td><td class="pr">2000</td></tr>
+      <tr><td class="nm">兵书24篇</td><td class="lv">20</td><td class="sk">智力+10</td><td class="pr">2000</td></tr>
+      <tr class="rare"><td class="nm">幻世录<span class="star">★</span></td><td class="lv">40</td><td class="sk">智力+20</td><td class="pr">非卖品</td></tr>
+      <tr class="rare"><td class="nm">幻世录Ⅱ<span class="star">★</span></td><td class="lv">50</td><td class="sk">智力+30</td><td class="pr">非卖品</td></tr>
+    </tbody>
+  </table>
+
+  <h2>二、武将技书：千人战里的杀招</h2>
+  <p class="sub">装上就多出这些武将技，上阵花气力放。同一线里，「秘诀书 / 秘法书」是入门书的升级版，直接学上级招。</p>
+  <table>
+    <thead><tr><th>名称</th><th>需等级</th><th>附加武将技</th><th>价值</th></tr></thead>
+    <tbody>
+      <tr><td class="nm">赤焰术诀</td><td class="lv">5</td><td class="sk">赤焰、赤焰燃</td><td class="pr">800</td></tr>
+      <tr><td class="nm">连弩兵法</td><td class="lv">5</td><td class="sk">连弩、连弩激射</td><td class="pr">800</td></tr>
+      <tr class="rare"><td class="nm">奥汀秘术<span class="star">★</span></td><td class="lv">5</td><td class="sk">奥汀火轮冲</td><td class="pr">非卖品</td></tr>
+      <tr><td class="nm">火箭兵法</td><td class="lv">8</td><td class="sk">火箭烈、火箭强袭</td><td class="pr">800</td></tr>
+      <tr><td class="nm">地泉术诀</td><td class="lv">8</td><td class="sk">地泉、地泉冲</td><td class="pr">800</td></tr>
+      <tr><td class="nm">地茅兵法</td><td class="lv">8</td><td class="sk">地茅刺、地茅乱刺</td><td class="pr">800</td></tr>
+      <tr><td class="nm">赤焰秘法书</td><td class="lv">10</td><td class="sk">赤焰火海</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">连弩秘诀书</td><td class="lv">10</td><td class="sk">连弩狂涛</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">突石术诀</td><td class="lv">10</td><td class="sk">突石、突石剑</td><td class="pr">800</td></tr>
+      <tr><td class="nm">太极印</td><td class="lv">10</td><td class="sk">太极门</td><td class="pr">1000</td></tr>
+      <tr><td class="nm">突击战鼓</td><td class="lv">10</td><td class="sk">长枪突击</td><td class="pr">800</td></tr>
+      <tr><td class="nm">火牛兵法</td><td class="lv">10</td><td class="sk">火牛阵、火牛群舞</td><td class="pr">800</td></tr>
+      <tr><td class="nm">驱豹兵法</td><td class="lv">10</td><td class="sk">驱豹、驱豹冲</td><td class="pr">800</td></tr>
+      <tr class="rare"><td class="nm">真奥汀秘术<span class="star">★</span></td><td class="lv">10</td><td class="sk">奥汀大将军</td><td class="pr">非卖品</td></tr>
+      <tr><td class="nm">火轮兵法</td><td class="lv">12</td><td class="sk">火轮、火轮冲</td><td class="pr">800</td></tr>
+      <tr><td class="nm">滚石兵法</td><td class="lv">12</td><td class="sk">滚石、滚石剧压</td><td class="pr">800</td></tr>
+      <tr><td class="nm">伏兵兵法</td><td class="lv">12</td><td class="sk">伏兵班阵、伏兵排阵</td><td class="pr">800</td></tr>
+      <tr><td class="nm">后伏兵法</td><td class="lv">12</td><td class="sk">后伏班阵、后伏排阵</td><td class="pr">800</td></tr>
+      <tr><td class="nm">地泉秘法书</td><td class="lv">13</td><td class="sk">地泉鲸浪</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">地茅秘诀书</td><td class="lv">13</td><td class="sk">地茅遍地</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">龙炮兵法</td><td class="lv">15</td><td class="sk">龙炮、迫击龙炮</td><td class="pr">800</td></tr>
+      <tr><td class="nm">炬石兵法</td><td class="lv">15</td><td class="sk">炬石、炬石轰</td><td class="pr">800</td></tr>
+      <tr><td class="nm">突石秘法书</td><td class="lv">15</td><td class="sk">突剑四方</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">烈火符</td><td class="lv">15</td><td class="sk">集火柱</td><td class="pr">1000</td></tr>
+      <tr><td class="nm">太极符印</td><td class="lv">15</td><td class="sk">太极华阵</td><td class="pr">1800</td></tr>
+      <tr><td class="nm">雷击术诀</td><td class="lv">15</td><td class="sk">雷击、雷击闪</td><td class="pr">800</td></tr>
+      <tr><td class="nm">五雷术诀</td><td class="lv">15</td><td class="sk">五雷袭、五雷轰顶</td><td class="pr">800</td></tr>
+      <tr><td class="nm">旋风术诀</td><td class="lv">15</td><td class="sk">旋风、龙旋风</td><td class="pr">800</td></tr>
+      <tr><td class="nm">背水战鼓</td><td class="lv">15</td><td class="sk">铁骑突击</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">火牛秘诀书</td><td class="lv">15</td><td class="sk">火牛烈崩</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">驱豹秘诀书</td><td class="lv">15</td><td class="sk">驱豹突击</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">回天石</td><td class="lv">15</td><td class="sk">回天术、返天术</td><td class="pr">2000</td></tr>
+      <tr><td class="nm">雷火卷轴</td><td class="lv">15</td><td class="sk">火雷玉、火雷鬼玉</td><td class="pr">1000</td></tr>
+      <tr><td class="nm">血剑诀</td><td class="lv">15</td><td class="sk">噬血、噬血刃</td><td class="pr">1000</td></tr>
+      <tr><td class="nm">天剑诀</td><td class="lv">15</td><td class="sk">天剑斩、天剑开光</td><td class="pr">1000</td></tr>
+      <tr><td class="nm">火箭秘诀书</td><td class="lv">16</td><td class="sk">火箭天袭</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">火轮秘诀书</td><td class="lv">16</td><td class="sk">火轮涛杀</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">滚石秘诀书</td><td class="lv">16</td><td class="sk">滚石怒冲</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">伏兵秘诀书</td><td class="lv">18</td><td class="sk">伏兵连阵</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">后伏秘诀书</td><td class="lv">18</td><td class="sk">后伏连阵</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">龙牙机关</td><td class="lv">18</td><td class="sk">龙牙车、龙牙车队</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">龙炮秘诀书</td><td class="lv">20</td><td class="sk">冲射龙炮</td><td class="pr">1200</td></tr>
+      <tr><td class="nm">炬石秘诀书</td><td class="lv">20</td><td class="sk">炬石炼狱</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">爆炎符</td><td class="lv">20</td><td class="sk">强火柱</td><td class="pr">1800</td></tr>
+      <tr><td class="nm">狂雷秘法书</td><td class="lv">20</td><td class="sk">狂雷天牢</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">莲华术诀</td><td class="lv">20</td><td class="sk">莲华、莲华爆</td><td class="pr">1000</td></tr>
+      <tr><td class="nm">龙卷秘法书</td><td class="lv">20</td><td class="sk">龙卷旋风</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">神鸢兵法</td><td class="lv">20</td><td class="sk">神鸢、神鸢弹</td><td class="pr">800</td></tr>
+      <tr><td class="nm">命疗石</td><td class="lv">20</td><td class="sk">命疗术、体疗术</td><td class="pr">1800</td></tr>
+      <tr><td class="nm">活天宝珠</td><td class="lv">20</td><td class="sk">活天术</td><td class="pr">2500</td></tr>
+      <tr><td class="nm">浮雷术诀</td><td class="lv">20</td><td class="sk">浮雷、浮雷阵</td><td class="pr">2500</td></tr>
+      <tr><td class="nm">恶鬼盾</td><td class="lv">20</td><td class="sk">妖盾、鬼面盾</td><td class="pr">2000</td></tr>
+      <tr><td class="nm">人形纸符</td><td class="lv">20</td><td class="sk">符兵、符兵引</td><td class="pr">1000</td></tr>
+      <tr><td class="nm">土遁卷轴</td><td class="lv">20</td><td class="sk">土遁、土遁杀</td><td class="pr">1000</td></tr>
+      <tr><td class="nm">赤鬼卷轴</td><td class="lv">20</td><td class="sk">火雷鬼玉破</td><td class="pr">2500</td></tr>
+      <tr><td class="nm">苦无卷轴</td><td class="lv">20</td><td class="sk">忍镖、隐忍镖</td><td class="pr">1000</td></tr>
+      <tr><td class="nm">血剑秘录</td><td class="lv">20</td><td class="sk">噬血魔刃</td><td class="pr">2000</td></tr>
+      <tr><td class="nm">天剑秘录</td><td class="lv">20</td><td class="sk">天剑神威</td><td class="pr">2000</td></tr>
+      <tr><td class="nm">地龙珠</td><td class="lv">20</td><td class="sk">地龙、地龙震</td><td class="pr">2500</td></tr>
+      <tr><td class="nm">火龙珠</td><td class="lv">20</td><td class="sk">火龙、火龙焰</td><td class="pr">2500</td></tr>
+      <tr><td class="nm">水龙珠</td><td class="lv">20</td><td class="sk">水龙、水龙涛</td><td class="pr">2500</td></tr>
+      <tr><td class="nm">风龙珠</td><td class="lv">20</td><td class="sk">风龙、风龙旋</td><td class="pr">2500</td></tr>
+      <tr><td class="nm">八卦术诀</td><td class="lv">22</td><td class="sk">八卦二象阵、八卦四方阵</td><td class="pr">1000</td></tr>
+      <tr><td class="nm">龙牙解构图</td><td class="lv">22</td><td class="sk">龙牙车阵</td><td class="pr">2800</td></tr>
+      <tr><td class="nm">火药袋</td><td class="lv">25</td><td class="sk">炎墙</td><td class="pr">2500</td></tr>
+      <tr><td class="nm">八卦秘法书</td><td class="lv">25</td><td class="sk">八卦六角阵</td><td class="pr">1800</td></tr>
+      <tr><td class="nm">雷击秘法书</td><td class="lv">25</td><td class="sk">雷光燋狱</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">冲车</td><td class="lv">25</td><td class="sk">冲车</td><td class="pr">2000</td></tr>
+      <tr><td class="nm">召鬼石</td><td class="lv">25</td><td class="sk">尸鬼、食尸鬼</td><td class="pr">2000</td></tr>
+      <tr><td class="nm">井阑</td><td class="lv">25</td><td class="sk">井阑立</td><td class="pr">2500</td></tr>
+      <tr><td class="nm">活疗宝珠</td><td class="lv">25</td><td class="sk">活疗术</td><td class="pr">2200</td></tr>
+      <tr><td class="nm">鬼王盾</td><td class="lv">25</td><td class="sk">罗刹之盾</td><td class="pr">3000</td></tr>
+      <tr><td class="nm">人皮傀儡</td><td class="lv">25</td><td class="sk">符兵连引</td><td class="pr">2500</td></tr>
+      <tr><td class="nm">暗杀卷轴</td><td class="lv">25</td><td class="sk">土遁隐杀</td><td class="pr">2500</td></tr>
+      <tr><td class="nm">风魔卷轴</td><td class="lv">25</td><td class="sk">隐忍镖阵</td><td class="pr">2500</td></tr>
+      <tr><td class="nm">莲华秘法书</td><td class="lv">30</td><td class="sk">莲华轰天</td><td class="pr">2000</td></tr>
+      <tr><td class="nm">攻城战车</td><td class="lv">30</td><td class="sk">驷冲车</td><td class="pr">3200</td></tr>
+      <tr><td class="nm">唤魂法珠</td><td class="lv">30</td><td class="sk">食尸鬼阵</td><td class="pr">3200</td></tr>
+      <tr><td class="nm">炎兽像</td><td class="lv">30</td><td class="sk">炎兽</td><td class="pr">3200</td></tr>
+      <tr><td class="nm">神鸢秘诀书</td><td class="lv">30</td><td class="sk">神鸢空袭</td><td class="pr">1800</td></tr>
+      <tr><td class="nm">黄泉玉</td><td class="lv">30</td><td class="sk">生死门</td><td class="pr">3200</td></tr>
+      <tr><td class="nm">浮雷秘法书</td><td class="lv">30</td><td class="sk">浮雷光阵</td><td class="pr">1800</td></tr>
+      <tr><td class="nm">地龙旗</td><td class="lv">30</td><td class="sk">地龙极震</td><td class="pr">3500</td></tr>
+      <tr><td class="nm">火龙旗</td><td class="lv">30</td><td class="sk">火龙怒焰</td><td class="pr">3500</td></tr>
+      <tr><td class="nm">水龙旗</td><td class="lv">30</td><td class="sk">水龙狂涛</td><td class="pr">3500</td></tr>
+      <tr><td class="nm">风龙旗</td><td class="lv">30</td><td class="sk">风龙天旋</td><td class="pr">3500</td></tr>
+      <tr><td class="nm">火药桶</td><td class="lv">31</td><td class="sk">炎墙烈烧</td><td class="pr">1800</td></tr>
+      <tr><td class="nm">轒辒兵法</td><td class="lv">32</td><td class="sk">轒辒车、参轒辒车</td><td class="pr">2500</td></tr>
+      <tr><td class="nm">旋灯术诀</td><td class="lv">32</td><td class="sk">旋灯、旋灯火</td><td class="pr">2000</td></tr>
+      <tr><td class="nm">喷火龙车</td><td class="lv">35</td><td class="sk">炎兽杀阵</td><td class="pr">3800</td></tr>
+      <tr><td class="nm">攻城塔</td><td class="lv">35</td><td class="sk">井阑冲阵</td><td class="pr">3800</td></tr>
+      <tr><td class="nm">冥府宝珠</td><td class="lv">35</td><td class="sk">地狱之门</td><td class="pr">4200</td></tr>
+      <tr><td class="nm">轒辒秘诀书</td><td class="lv">37</td><td class="sk">驷轒辒车</td><td class="pr">4000</td></tr>
+      <tr><td class="nm">旋灯秘法书</td><td class="lv">37</td><td class="sk">旋灯怒张</td><td class="pr">3200</td></tr>
+      <tr class="rare"><td class="nm">天灵镜<span class="star">★</span></td><td class="lv">37</td><td class="sk">黄龙天翔</td><td class="pr">非卖品</td></tr>
+      <tr class="rare"><td class="nm">地灵镜<span class="star">★</span></td><td class="lv">37</td><td class="sk">大地狂啸</td><td class="pr">非卖品</td></tr>
+      <tr class="rare"><td class="nm">东岳之土<span class="star">★</span></td><td class="lv">37</td><td class="sk">泰山压顶</td><td class="pr">非卖品</td></tr>
+      <tr class="rare"><td class="nm">时空宝珠<span class="star">★</span></td><td class="lv">40</td><td class="sk">八门金锁</td><td class="pr">非卖品</td></tr>
+    </tbody>
+  </table>
+
+  <h2>三、军师技书：开打前先占便宜</h2>
+  <p class="sub">只有军师能放。「幡」管天候，「要诀 → 战术 → 秘典」是三段升级，越贵教得越多。</p>
+  <table>
+    <thead><tr><th>名称</th><th>需等级</th><th>附加军师技</th><th>价值</th></tr></thead>
+    <tbody>
+      <tr><td class="nm">鹿角要诀</td><td class="lv">5</td><td class="sk">拒鹿角、拒鹿包围</td><td class="pr">800</td></tr>
+      <tr><td class="nm">地雷要诀</td><td class="lv">5</td><td class="sk">地雷、地雷火</td><td class="pr">800</td></tr>
+      <tr><td class="nm">地钉忍法帖</td><td class="lv">5</td><td class="sk">地钉、铁地钉</td><td class="pr">800</td></tr>
+      <tr><td class="nm">太阳幡</td><td class="lv">10</td><td class="sk">拨云见日、万法自然</td><td class="pr">800</td></tr>
+      <tr><td class="nm">太阴幡</td><td class="lv">10</td><td class="sk">天狗吞日、万法自然</td><td class="pr">800</td></tr>
+      <tr><td class="nm">雷雨幡</td><td class="lv">10</td><td class="sk">风云变色、万法自然</td><td class="pr">800</td></tr>
+      <tr><td class="nm">飞雪幡</td><td class="lv">10</td><td class="sk">霜雪覆地、万法自然</td><td class="pr">800</td></tr>
+      <tr><td class="nm">鹿角战术</td><td class="lv">10</td><td class="sk">鹿角十重、探查拒鹿</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">地雷战术</td><td class="lv">10</td><td class="sk">地雷星火、探查地雷</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">地钉秘忍书</td><td class="lv">10</td><td class="sk">钢地钉阵、探查地钉</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">断路要诀</td><td class="lv">15</td><td class="sk">无法退兵</td><td class="pr">1000</td></tr>
+      <tr><td class="nm">撤退要诀</td><td class="lv">15</td><td class="sk">预留退路</td><td class="pr">1000</td></tr>
+      <tr><td class="nm">鹿角秘典</td><td class="lv">15</td><td class="sk">鹿角截击、鹿角拦路</td><td class="pr">2200</td></tr>
+      <tr><td class="nm">地雷秘典</td><td class="lv">15</td><td class="sk">地雷阻敌、地雷伏击</td><td class="pr">2200</td></tr>
+      <tr><td class="nm">地钉里奥义</td><td class="lv">15</td><td class="sk">地钉断路、地钉迎敌</td><td class="pr">2200</td></tr>
+      <tr><td class="nm">埋伏战术</td><td class="lv">15</td><td class="sk">埋伏班阵、埋伏排阵</td><td class="pr">1800</td></tr>
+      <tr><td class="nm">援军战术</td><td class="lv">15</td><td class="sk">援军班阵、援军排阵</td><td class="pr">1800</td></tr>
+      <tr><td class="nm">饕餮之牙</td><td class="lv">15</td><td class="sk">杀气</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">甩手短箭</td><td class="lv">15</td><td class="sk">暗箭伤人</td><td class="pr">1000</td></tr>
+      <tr><td class="nm">经验宝珠</td><td class="lv">15</td><td class="sk">增加经验</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">石墙图卷</td><td class="lv">15</td><td class="sk">石墙阵地</td><td class="pr">1000</td></tr>
+      <tr><td class="nm">拒马图卷</td><td class="lv">15</td><td class="sk">拒马阵地</td><td class="pr">1000</td></tr>
+      <tr><td class="nm">铁盾图卷</td><td class="lv">15</td><td class="sk">铁盾阵地</td><td class="pr">1000</td></tr>
+      <tr><td class="nm">破阵要诀</td><td class="lv">15</td><td class="sk">破阵大法</td><td class="pr">2000</td></tr>
+      <tr><td class="nm">气疗珠</td><td class="lv">15</td><td class="sk">气疗</td><td class="pr">1800</td></tr>
+      <tr><td class="nm">铁兽机关</td><td class="lv">15</td><td class="sk">前锋铁兽、铁兽杀阵</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">箭楼机关</td><td class="lv">15</td><td class="sk">前锋箭楼、箭楼杀阵</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">铜人机关</td><td class="lv">15</td><td class="sk">前锋铜人、铜人杀阵</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">御赐战鼓</td><td class="lv">20</td><td class="sk">增我将攻</td><td class="pr">1000</td></tr>
+      <tr><td class="nm">毒舌心得</td><td class="lv">20</td><td class="sk">减敌将攻</td><td class="pr">1000</td></tr>
+      <tr><td class="nm">海螺号角</td><td class="lv">20</td><td class="sk">鼓舞士气</td><td class="pr">1000</td></tr>
+      <tr><td class="nm">楚歌曲谱</td><td class="lv">20</td><td class="sk">降敌士气</td><td class="pr">1000</td></tr>
+      <tr><td class="nm">埋伏秘典</td><td class="lv">20</td><td class="sk">埋伏连阵、探查埋伏</td><td class="pr">2500</td></tr>
+      <tr><td class="nm">援军秘典</td><td class="lv">20</td><td class="sk">援军连阵、探查援军</td><td class="pr">2500</td></tr>
+      <tr><td class="nm">封技战术</td><td class="lv">20</td><td class="sk">封武将技</td><td class="pr">2000</td></tr>
+      <tr><td class="nm">饕餮之骨</td><td class="lv">20</td><td class="sk">杀气骤升</td><td class="pr">2500</td></tr>
+      <tr><td class="nm">回春石</td><td class="lv">20</td><td class="sk">回春术</td><td class="pr">2500</td></tr>
+      <tr><td class="nm">气疗宝珠</td><td class="lv">20</td><td class="sk">气疗诀</td><td class="pr">2500</td></tr>
+      <tr class="rare"><td class="nm">无我明镜<span class="star">★</span></td><td class="lv">20</td><td class="sk">水镜之术</td><td class="pr">非卖品</td></tr>
+      <tr><td class="nm">天时战术</td><td class="lv">22</td><td class="sk">顺应天时、逆转天时</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">地利战术</td><td class="lv">22</td><td class="sk">顺应地利、逆转地利</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">人和战术</td><td class="lv">22</td><td class="sk">顺应人和、逆转人和</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">炼气炉</td><td class="lv">25</td><td class="sk">加速集气</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">化气炉</td><td class="lv">25</td><td class="sk">减缓集气</td><td class="pr">1500</td></tr>
+      <tr><td class="nm">先攻要诀</td><td class="lv">25</td><td class="sk">后发先至、意发并进</td><td class="pr">2000</td></tr>
+      <tr><td class="nm">破甲要诀</td><td class="lv">25</td><td class="sk">减敌军防</td><td class="pr">1800</td></tr>
+      <tr><td class="nm">防御要诀</td><td class="lv">25</td><td class="sk">增我军防</td><td class="pr">1800</td></tr>
+      <tr><td class="nm">障碍要诀</td><td class="lv">25</td><td class="sk">减敌军速</td><td class="pr">1800</td></tr>
+      <tr><td class="nm">行军要诀</td><td class="lv">25</td><td class="sk">增我军速</td><td class="pr">1800</td></tr>
+      <tr><td class="nm">封技秘典</td><td class="lv">25</td><td class="sk">封必杀技、解除封技</td><td class="pr">3000</td></tr>
+      <tr><td class="nm">饕餮之角</td><td class="lv">25</td><td class="sk">杀气腾腾、压制杀气</td><td class="pr">3800</td></tr>
+      <tr><td class="nm">抚军要诀</td><td class="lv">25</td><td class="sk">稳定军心</td><td class="pr">2000</td></tr>
+      <tr><td class="nm">回春晶石</td><td class="lv">25</td><td class="sk">回春仙术</td><td class="pr">3500</td></tr>
+      <tr><td class="nm">气疗金珠</td><td class="lv">25</td><td class="sk">气疗大法</td><td class="pr">6000</td></tr>
+      <tr><td class="nm">铁兽结构图</td><td class="lv">25</td><td class="sk">铁兽大阵、拆除铁兽</td><td class="pr">2500</td></tr>
+      <tr><td class="nm">箭楼结构图</td><td class="lv">25</td><td class="sk">箭楼大阵、拆除箭楼</td><td class="pr">2500</td></tr>
+      <tr><td class="nm">铜人结构图</td><td class="lv">25</td><td class="sk">铜人大阵、拆除铜人</td><td class="pr">2500</td></tr>
+      <tr><td class="nm">先攻战术</td><td class="lv">30</td><td class="sk">发在意先、意发皆止</td><td class="pr">3500</td></tr>
+      <tr class="rare"><td class="nm">暴君之首<span class="star">★</span></td><td class="lv">30</td><td class="sk">诅咒</td><td class="pr">非卖品</td></tr>
+      <tr class="rare"><td class="nm">霸王之首<span class="star">★</span></td><td class="lv">30</td><td class="sk">军魂</td><td class="pr">非卖品</td></tr>
+      <tr><td class="nm">唤尸符</td><td class="lv">30</td><td class="sk">借尸还命、借尸还魄</td><td class="pr">3000</td></tr>
+      <tr><td class="nm">策反要诀</td><td class="lv">30</td><td class="sk">策反之计</td><td class="pr">3500</td></tr>
+      <tr class="rare"><td class="nm">蚩尤之首<span class="star">★</span></td><td class="lv">35</td><td class="sk">大魔界</td><td class="pr">非卖品</td></tr>
+      <tr class="rare"><td class="nm">传国玉玺<span class="star">★</span></td><td class="lv">35</td><td class="sk">大天圣</td><td class="pr">非卖品</td></tr>
+      <tr><td class="nm">唤尸令</td><td class="lv">35</td><td class="sk">借尸还魂、魂归西天</td><td class="pr">5000</td></tr>
+      <tr class="rare"><td class="nm">太平要术<span class="star">★</span></td><td class="lv">35</td><td class="sk">施技减半</td><td class="pr">非卖品</td></tr>
+      <tr class="rare"><td class="nm">无极乾坤图<span class="star">★</span></td><td class="lv">37</td><td class="sk">逆乾坤</td><td class="pr">非卖品</td></tr>
+      <tr class="rare"><td class="nm">前锋拆解书<span class="star">★</span></td><td class="lv">37</td><td class="sk">前锋尽灭</td><td class="pr">3500</td></tr>
+      <tr class="rare"><td class="nm">遁甲天书<span class="star">★</span></td><td class="lv">40</td><td class="sk">文成武德</td><td class="pr">非卖品</td></tr>
+      <tr class="rare"><td class="nm">通天镜<span class="star">★</span></td><td class="lv">40</td><td class="sk">通天之眼</td><td class="pr">非卖品</td></tr>
+      <tr class="rare"><td class="nm">蔽天帆<span class="star">★</span></td><td class="lv">40</td><td class="sk">蔽天之幕</td><td class="pr">非卖品</td></tr>
+    </tbody>
+  </table>
+
+  <h2>四、五大神兽神器</h2>
+  <p class="sub">最高稀有度，附带召唤神兽的武将技。取得方式见 <a href="神兽解锁攻略.html">神兽解锁攻略</a>。</p>
+  <table>
+    <thead><tr><th>名称</th><th>需等级</th><th>附加武将技</th><th>价值</th></tr></thead>
+    <tbody>
+      <tr class="rare"><td class="nm">麒麟金角<span class="star">★</span></td><td class="lv">20</td><td class="sk">麒麟降世</td><td class="pr">非卖品</td></tr>
+      <tr class="rare"><td class="nm">青龙逆鳞<span class="star">★</span></td><td class="lv">20</td><td class="sk">青龙飞升</td><td class="pr">非卖品</td></tr>
+      <tr class="rare"><td class="nm">玄武灵壳<span class="star">★</span></td><td class="lv">20</td><td class="sk">玄武怒流</td><td class="pr">非卖品</td></tr>
+      <tr class="rare"><td class="nm">白虎银牙<span class="star">★</span></td><td class="lv">20</td><td class="sk">白虎傲啸</td><td class="pr">非卖品</td></tr>
+      <tr class="rare"><td class="nm">朱雀炎羽<span class="star">★</span></td><td class="lv">20</td><td class="sk">朱雀焚天</td><td class="pr">非卖品</td></tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    <b>还有 17 件"有名字却拿不到"的道具。</b>
+    数据里它们被标成停用、也没有任何说明文字，正常玩不出来：
+    走为上策、扰敌之术、解劳之术、太平青领道、劝降战术、威胁战术、楼船、蒙冲船、行军天书、治军宝典、六韬兵书、八宝灵灯、止水明镜、甘露宝瓶、真龙玄印、九锡宝器、一品紫金冠。
+    看到有人晒这些，多半是改出来的。
+  </div>
+
+  <div class="note">
+    <b>练级比攒钱重要。</b>最抢手的书门槛都不低——幻世录Ⅱ 要 50 级、幻世录 40 级、时空宝珠 40 级。
+    等级不够，钱再多也装不上；前期先拿 5～15 级的书过渡就行。
+  </div>
+
+  <footer>依据《三国群英传V》游戏本体数据整理　·　共 184 件可用道具</footer>
+
+</div>
+</body>
+</html>

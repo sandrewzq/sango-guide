@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>三国群英传V · 名将图鉴</title>
+<style>
+  :root{ --ink:#2b2118; --line:#ded2bc; --bg:#f6f1e6; --card:#fffdf8; --qi:#b8860b; }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--bg); color:var(--ink); font-size:16px; line-height:1.7;
+       font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB",sans-serif;}
+  .wrap{max-width:820px; margin:0 auto; padding:0 18px 60px;}
+  header{background:linear-gradient(135deg,#3a2c1e,#5c4630); color:#f3e7cf;
+    padding:28px 18px; text-align:center; border-bottom:4px solid var(--qi);}
+  header h1{margin:0; font-size:23px; letter-spacing:4px; font-weight:700;}
+  header p{margin:6px 0 0; color:#cbb894; font-size:13px;}
+  .key{background:#eef7f1; border:1px solid #b7dcc7; border-radius:10px;
+    padding:16px 22px; margin:22px 0; box-shadow:0 2px 8px rgba(90,70,40,.06);}
+  .key h3{margin:0 0 8px; font-size:16px; color:#22684a;}
+  .key ol{margin:6px 0 0; padding-left:22px;} .key li{margin:6px 0;}
+  .key b{color:#1d7a55;}
+  h2{font-size:17px; margin:34px 0 6px; padding-left:12px;
+     border-left:5px solid var(--qi); line-height:1.3;}
+  .sub{color:#7a6a52; font-size:14px; margin:0 0 10px;}
+  .two{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  table{width:100%; border-collapse:collapse; background:var(--card);
+    border:1px solid var(--line); border-radius:10px; overflow:hidden; font-size:15px;
+    box-shadow:0 2px 8px rgba(90,70,40,.06);}
+  th,td{padding:7px 6px; border-bottom:1px solid var(--line); text-align:center;}
+  th{background:#efe6d3; color:#5a4630; letter-spacing:.5px;}
+  tbody tr:last-child td{border-bottom:none;}
+  tbody tr:nth-child(even){background:#fbf7ee;}
+  td.rk{color:#a8987d; width:34px;}
+  td.nm{font-weight:700; color:#3f3225; white-space:nowrap;}
+  td.s{color:#8c3a2e;} td.i{color:#2f5f8c;}
+  td.j{font-weight:700;}
+  td.j.hi{color:#1d7a55;} td.j.lo{color:#c0392b;}
+  .fem{display:inline-block; font-size:11px; padding:0 5px; border-radius:8px;
+    background:#fbe9ef; color:#b03a63;}
+  .pair{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+  .pair h4{margin:0 0 6px; font-size:15px; text-align:center; padding:5px;
+    border-radius:8px 8px 0 0;}
+  .pair .good h4{background:#e6f5ec; color:#1d7a55;}
+  .pair .bad  h4{background:#fdeeee; color:#b0392b;}
+  ul{margin:8px 0; padding-left:22px;} ul li{margin:5px 0;}
+  .warn{background:#fff8e8; border-left:4px solid #e0a800; border-radius:6px;
+    padding:12px 18px; margin:18px 0; font-size:15px; color:#6a5322;}
+  footer{margin-top:44px; padding-top:16px; border-top:1px solid var(--line);
+    color:#9a8b74; font-size:12px; text-align:center;}
+  @media (max-width:620px){
+    header h1{font-size:18px;} th,td{padding:6px 3px; font-size:12.5px;}
+    .two,.pair{grid-template-columns:1fr; gap:10px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>名 将 图 鉴</h1>
+  <p>三国群英传 V　·　780 名可招武将，四个数挑人</p>
+</header>
+
+<div class="wrap">
+
+  <div class="key">
+    <h3>挑武将只看四个数</h3>
+    <ol>
+      <li><b>武力</b>——单挑扛线、带兵砍人，越高越能打。</li>
+      <li><b>智力</b>——军师技和内政全靠它，智将当太守开发快。</li>
+      <li><b>忠诚</b>——游戏里武将资料面板就有这一项。<b>越高越死忠</b>（招不动、不会叛），<b>越低越好挖</b>（打一顿就降，
+          但也随时可能被别人挖走）。</li>
+      <li><b>阵形 / 武器系</b>——见《阵法指南》《武器坐骑排行》，这里只看人。</li>
+    </ol>
+    <p style="margin:8px 0 0;">招人先看忠诚：<b>90 以上</b>的，砸钱、威胁、围城全都没用，
+       只能靠俘获后慢慢磨或干脆灭了他；<b>40 以下</b>的，一被俘基本就降。</p>
+  </div>
+
+  <h2>一、武力榜（前 24）</h2>
+  <p class="sub">红字武力，蓝字智力，绿字忠诚高、红字忠诚低。</p>
+  <table><thead><tr><th>#</th><th>武将</th><th>武力</th><th>智力</th><th>忠诚</th><th></th></tr></thead><tbody>
+  <tr><td class="rk">1</td><td class="nm">吕布</td><td class="s">100</td><td class="i">45</td><td class="j lo">27</td><td></td></tr>
+  <tr><td class="rk">2</td><td class="nm">张飞</td><td class="s">99</td><td class="i">49</td><td class="j hi">99</td><td></td></tr>
+  <tr><td class="rk">3</td><td class="nm">许褚</td><td class="s">98</td><td class="i">22</td><td class="j ">83</td><td></td></tr>
+  <tr><td class="rk">4</td><td class="nm">关羽</td><td class="s">98</td><td class="i">82</td><td class="j hi">100</td><td></td></tr>
+  <tr><td class="rk">5</td><td class="nm">太史慈</td><td class="s">97</td><td class="i">69</td><td class="j hi">88</td><td></td></tr>
+  <tr><td class="rk">6</td><td class="nm">典韦</td><td class="s">97</td><td class="i">33</td><td class="j ">77</td><td></td></tr>
+  <tr><td class="rk">7</td><td class="nm">赵云</td><td class="s">97</td><td class="i">88</td><td class="j hi">98</td><td></td></tr>
+  <tr><td class="rk">8</td><td class="nm">甘宁</td><td class="s">96</td><td class="i">65</td><td class="j hi">85</td><td></td></tr>
+  <tr><td class="rk">9</td><td class="nm">夏侯惇</td><td class="s">96</td><td class="i">70</td><td class="j hi">100</td><td></td></tr>
+  <tr><td class="rk">10</td><td class="nm">马超</td><td class="s">96</td><td class="i">43</td><td class="j hi">96</td><td></td></tr>
+  <tr><td class="rk">11</td><td class="nm">文丑</td><td class="s">95</td><td class="i">27</td><td class="j hi">86</td><td></td></tr>
+  <tr><td class="rk">12</td><td class="nm">孙策</td><td class="s">95</td><td class="i">83</td><td class="j hi">94</td><td></td></tr>
+  <tr><td class="rk">13</td><td class="nm">张辽</td><td class="s">95</td><td class="i">89</td><td class="j ">68</td><td></td></tr>
+  <tr><td class="rk">14</td><td class="nm">黄忠</td><td class="s">95</td><td class="i">68</td><td class="j ">41</td><td></td></tr>
+  <tr><td class="rk">15</td><td class="nm">夏侯渊</td><td class="s">94</td><td class="i">55</td><td class="j hi">99</td><td></td></tr>
+  <tr><td class="rk">16</td><td class="nm">孙坚</td><td class="s">94</td><td class="i">81</td><td class="j hi">90</td><td></td></tr>
+  <tr><td class="rk">17</td><td class="nm">张郃</td><td class="s">94</td><td class="i">71</td><td class="j ">83</td><td></td></tr>
+  <tr><td class="rk">18</td><td class="nm">魏延</td><td class="s">94</td><td class="i">70</td><td class="j lo">36</td><td></td></tr>
+  <tr><td class="rk">19</td><td class="nm">徐晃</td><td class="s">93</td><td class="i">69</td><td class="j ">78</td><td></td></tr>
+  <tr><td class="rk">20</td><td class="nm">颜良</td><td class="s">93</td><td class="i">37</td><td class="j ">84</td><td></td></tr>
+  <tr><td class="rk">21</td><td class="nm">庞德</td><td class="s">93</td><td class="i">76</td><td class="j ">58</td><td></td></tr>
+  <tr><td class="rk">22</td><td class="nm">甘若男</td><td class="s">92</td><td class="i">67</td><td class="j hi">85</td><td><span class="fem">女</span></td></tr>
+  <tr><td class="rk">23</td><td class="nm">姜维</td><td class="s">92</td><td class="i">96</td><td class="j hi">90</td><td></td></tr>
+  <tr><td class="rk">24</td><td class="nm">曹彰</td><td class="s">92</td><td class="i">45</td><td class="j ">66</td><td></td></tr>
+  </tbody></table>
+
+  <h2>二、智力榜（前 24）</h2>
+  <p class="sub">智将才是内政和军师技的本钱，排名靠后武力也往往不低。</p>
+  <table><thead><tr><th>#</th><th>武将</th><th>武力</th><th>智力</th><th>忠诚</th><th></th></tr></thead><tbody>
+  <tr><td class="rk">1</td><td class="nm">诸葛亮</td><td class="s">75</td><td class="i">100</td><td class="j hi">100</td><td></td></tr>
+  <tr><td class="rk">2</td><td class="nm">黄月英</td><td class="s">75</td><td class="i">100</td><td class="j hi">100</td><td><span class="fem">女</span></td></tr>
+  <tr><td class="rk">3</td><td class="nm">司马懿</td><td class="s">78</td><td class="i">99</td><td class="j ">64</td><td></td></tr>
+  <tr><td class="rk">4</td><td class="nm">左慈</td><td class="s">23</td><td class="i">98</td><td class="j ">84</td><td></td></tr>
+  <tr><td class="rk">5</td><td class="nm">周瑜</td><td class="s">80</td><td class="i">98</td><td class="j hi">100</td><td></td></tr>
+  <tr><td class="rk">6</td><td class="nm">郭嘉</td><td class="s">33</td><td class="i">98</td><td class="j ">63</td><td></td></tr>
+  <tr><td class="rk">7</td><td class="nm">庞统</td><td class="s">54</td><td class="i">98</td><td class="j ">80</td><td></td></tr>
+  <tr><td class="rk">8</td><td class="nm">姜霞</td><td class="s">90</td><td class="i">97</td><td class="j hi">88</td><td><span class="fem">女</span></td></tr>
+  <tr><td class="rk">9</td><td class="nm">徐庶</td><td class="s">66</td><td class="i">97</td><td class="j ">69</td><td></td></tr>
+  <tr><td class="rk">10</td><td class="nm">荀彧</td><td class="s">36</td><td class="i">97</td><td class="j ">65</td><td></td></tr>
+  <tr><td class="rk">11</td><td class="nm">贾诩</td><td class="s">43</td><td class="i">97</td><td class="j ">51</td><td></td></tr>
+  <tr><td class="rk">12</td><td class="nm">姜维</td><td class="s">92</td><td class="i">96</td><td class="j hi">90</td><td></td></tr>
+  <tr><td class="rk">13</td><td class="nm">陆逊</td><td class="s">77</td><td class="i">96</td><td class="j hi">90</td><td></td></tr>
+  <tr><td class="rk">14</td><td class="nm">华陀</td><td class="s">17</td><td class="i">96</td><td class="j ">80</td><td></td></tr>
+  <tr><td class="rk">15</td><td class="nm">鲁肃</td><td class="s">62</td><td class="i">96</td><td class="j hi">92</td><td></td></tr>
+  <tr><td class="rk">16</td><td class="nm">钟会</td><td class="s">64</td><td class="i">96</td><td class="j ">55</td><td></td></tr>
+  <tr><td class="rk">17</td><td class="nm">司马徽</td><td class="s">26</td><td class="i">95</td><td class="j lo">39</td><td></td></tr>
+  <tr><td class="rk">18</td><td class="nm">田丰</td><td class="s">48</td><td class="i">95</td><td class="j ">83</td><td></td></tr>
+  <tr><td class="rk">19</td><td class="nm">荀攸</td><td class="s">48</td><td class="i">95</td><td class="j ">68</td><td></td></tr>
+  <tr><td class="rk">20</td><td class="nm">张角</td><td class="s">90</td><td class="i">95</td><td class="j ">52</td><td></td></tr>
+  <tr><td class="rk">21</td><td class="nm">曹操</td><td class="s">87</td><td class="i">95</td><td class="j hi">88</td><td></td></tr>
+  <tr><td class="rk">22</td><td class="nm">许子将</td><td class="s">19</td><td class="i">95</td><td class="j lo">32</td><td></td></tr>
+  <tr><td class="rk">23</td><td class="nm">法正</td><td class="s">55</td><td class="i">94</td><td class="j ">69</td><td></td></tr>
+  <tr><td class="rk">24</td><td class="nm">张昭</td><td class="s">20</td><td class="i">94</td><td class="j ">77</td><td></td></tr>
+  </tbody></table>
+
+  <h2>三、忠诚：死忠 与 墙头草</h2>
+  <p class="sub">左边这批你基本招不到，右边这批才是重点争取对象。</p>
+  <div class="pair">
+    <div class="good">
+      <h4>忠诚 90 以上 · 死忠</h4>
+      <table><thead><tr><th>#</th><th>武将</th><th>忠诚</th><th>武</th><th>智</th></tr></thead>
+      <tbody>
+      <tr><td class="rk">1</td><td class="nm">关羽</td><td class="j hi">100</td><td class="s">98</td><td class="i">82</td></tr>
+      <tr><td class="rk">2</td><td class="nm">夏侯惇</td><td class="j hi">100</td><td class="s">96</td><td class="i">70</td></tr>
+      <tr><td class="rk">3</td><td class="nm">周瑜</td><td class="j hi">100</td><td class="s">80</td><td class="i">98</td></tr>
+      <tr><td class="rk">4</td><td class="nm">诸葛亮</td><td class="j hi">100</td><td class="s">75</td><td class="i">100</td></tr>
+      <tr><td class="rk">5</td><td class="nm">黄月英</td><td class="j hi">100</td><td class="s">75</td><td class="i">100</td></tr>
+      <tr><td class="rk">6</td><td class="nm">张飞</td><td class="j hi">99</td><td class="s">99</td><td class="i">49</td></tr>
+      <tr><td class="rk">7</td><td class="nm">夏侯渊</td><td class="j hi">99</td><td class="s">94</td><td class="i">55</td></tr>
+      <tr><td class="rk">8</td><td class="nm">赵云</td><td class="j hi">98</td><td class="s">97</td><td class="i">88</td></tr>
+      <tr><td class="rk">9</td><td class="nm">马超</td><td class="j hi">96</td><td class="s">96</td><td class="i">43</td></tr>
+      <tr><td class="rk">10</td><td class="nm">夏侯儒</td><td class="j hi">96</td><td class="s">85</td><td class="i">63</td></tr>
+      <tr><td class="rk">11</td><td class="nm">夏侯娇</td><td class="j hi">95</td><td class="s">88</td><td class="i">59</td></tr>
+      <tr><td class="rk">12</td><td class="nm">孙霓裳</td><td class="j hi">95</td><td class="s">85</td><td class="i">81</td></tr>
+      <tr><td class="rk">13</td><td class="nm">孙策</td><td class="j hi">94</td><td class="s">95</td><td class="i">83</td></tr>
+      <tr><td class="rk">14</td><td class="nm">严颜</td><td class="j hi">94</td><td class="s">89</td><td class="i">72</td></tr>
+      </tbody></table>
+    </div>
+    <div class="bad">
+      <h4>忠诚 55 以下 · 易招易叛</h4>
+      <table><thead><tr><th>#</th><th>武将</th><th>忠诚</th><th>武</th><th>智</th></tr></thead>
+      <tbody>
+      <tr><td class="rk">1</td><td class="nm">蒯越</td><td class="j lo">19</td><td class="s">32</td><td class="i">87</td></tr>
+      <tr><td class="rk">2</td><td class="nm">管辂</td><td class="j lo">25</td><td class="s">24</td><td class="i">94</td></tr>
+      <tr><td class="rk">3</td><td class="nm">无臣氐</td><td class="j lo">25</td><td class="s">85</td><td class="i">22</td></tr>
+      <tr><td class="rk">4</td><td class="nm">吕布</td><td class="j lo">27</td><td class="s">100</td><td class="i">45</td></tr>
+      <tr><td class="rk">5</td><td class="nm">雅丹</td><td class="j lo">27</td><td class="s">56</td><td class="i">88</td></tr>
+      <tr><td class="rk">6</td><td class="nm">董卓</td><td class="j lo">30</td><td class="s">92</td><td class="i">53</td></tr>
+      <tr><td class="rk">7</td><td class="nm">夏侯和</td><td class="j lo">31</td><td class="s">62</td><td class="i">85</td></tr>
+      <tr><td class="rk">8</td><td class="nm">许子将</td><td class="j lo">32</td><td class="s">19</td><td class="i">95</td></tr>
+      <tr><td class="rk">9</td><td class="nm">蒋济</td><td class="j lo">33</td><td class="s">32</td><td class="i">86</td></tr>
+      <tr><td class="rk">10</td><td class="nm">王粲</td><td class="j lo">35</td><td class="s">23</td><td class="i">86</td></tr>
+      <tr><td class="rk">11</td><td class="nm">魏延</td><td class="j lo">36</td><td class="s">94</td><td class="i">70</td></tr>
+      <tr><td class="rk">12</td><td class="nm">谯周</td><td class="j lo">36</td><td class="s">16</td><td class="i">88</td></tr>
+      <tr><td class="rk">13</td><td class="nm">司马徽</td><td class="j lo">39</td><td class="s">26</td><td class="i">95</td></tr>
+      <tr><td class="rk">14</td><td class="nm">黄忠</td><td class="j ">41</td><td class="s">95</td><td class="i">68</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+
+  <h2>四、女将榜（前 18）</h2>
+  <p class="sub">全部 828 名武将里有 <b>105 名女将</b>，实力一点不输男将——</p>
+  <table><thead><tr><th>#</th><th>武将</th><th>武力</th><th>智力</th><th>忠诚</th><th></th></tr></thead><tbody>
+  <tr><td class="rk">1</td><td class="nm">姜霞</td><td class="s">90</td><td class="i">97</td><td class="j hi">88</td><td><span class="fem">女</span></td></tr>
+  <tr><td class="rk">2</td><td class="nm">张馨</td><td class="s">90</td><td class="i">88</td><td class="j ">75</td><td><span class="fem">女</span></td></tr>
+  <tr><td class="rk">3</td><td class="nm">黄月英</td><td class="s">75</td><td class="i">100</td><td class="j hi">100</td><td><span class="fem">女</span></td></tr>
+  <tr><td class="rk">4</td><td class="nm">吕菁</td><td class="s">81</td><td class="i">90</td><td class="j hi">86</td><td><span class="fem">女</span></td></tr>
+  <tr><td class="rk">5</td><td class="nm">貂蝉</td><td class="s">80</td><td class="i">88</td><td class="j ">82</td><td><span class="fem">女</span></td></tr>
+  <tr><td class="rk">6</td><td class="nm">孙霓裳</td><td class="s">85</td><td class="i">81</td><td class="j hi">95</td><td><span class="fem">女</span></td></tr>
+  <tr><td class="rk">7</td><td class="nm">司马铃</td><td class="s">75</td><td class="i">90</td><td class="j ">65</td><td><span class="fem">女</span></td></tr>
+  <tr><td class="rk">8</td><td class="nm">小乔</td><td class="s">82</td><td class="i">82</td><td class="j ">76</td><td><span class="fem">女</span></td></tr>
+  <tr><td class="rk">9</td><td class="nm">赵葳</td><td class="s">88</td><td class="i">76</td><td class="j ">81</td><td><span class="fem">女</span></td></tr>
+  <tr><td class="rk">10</td><td class="nm">严如意</td><td class="s">78</td><td class="i">85</td><td class="j ">45</td><td><span class="fem">女</span></td></tr>
+  <tr><td class="rk">11</td><td class="nm">孙仁</td><td class="s">86</td><td class="i">76</td><td class="j hi">88</td><td><span class="fem">女</span></td></tr>
+  <tr><td class="rk">12</td><td class="nm">太史昭容</td><td class="s">90</td><td class="i">71</td><td class="j hi">88</td><td><span class="fem">女</span></td></tr>
+  <tr><td class="rk">13</td><td class="nm">黄舞蝶</td><td class="s">90</td><td class="i">70</td><td class="j ">50</td><td><span class="fem">女</span></td></tr>
+  <tr><td class="rk">14</td><td class="nm">甘若男</td><td class="s">92</td><td class="i">67</td><td class="j hi">85</td><td><span class="fem">女</span></td></tr>
+  <tr><td class="rk">15</td><td class="nm">张燕燕</td><td class="s">80</td><td class="i">78</td><td class="j hi">90</td><td><span class="fem">女</span></td></tr>
+  <tr><td class="rk">16</td><td class="nm">刘莹</td><td class="s">72</td><td class="i">86</td><td class="j ">70</td><td><span class="fem">女</span></td></tr>
+  <tr><td class="rk">17</td><td class="nm">马翠</td><td class="s">77</td><td class="i">79</td><td class="j ">70</td><td><span class="fem">女</span></td></tr>
+  <tr><td class="rk">18</td><td class="nm">蔡薇</td><td class="s">75</td><td class="i">81</td><td class="j ">45</td><td><span class="fem">女</span></td></tr>
+  </tbody></table>
+
+  <h2>五、性价比最高的目标</h2>
+  <p class="sub">武力或智力 90 以上、同时忠诚 55 以下——既有本事又挖得动。</p>
+  <ul>
+  <li><b>吕布</b>　猛将　武力 100　智力 45　忠诚 27</li>
+  <li><b>贾诩</b>　军师　武力 43　智力 97　忠诚 51</li>
+  <li><b>钟会</b>　军师　武力 64　智力 96　忠诚 55</li>
+  <li><b>许子将</b>　军师　武力 19　智力 95　忠诚 32</li>
+  <li><b>司马徽</b>　军师　武力 26　智力 95　忠诚 39</li>
+  <li><b>黄忠</b>　猛将　武力 95　智力 68　忠诚 41</li>
+  <li><b>张角</b>　军师　武力 90　智力 95　忠诚 52</li>
+  <li><b>管辂</b>　军师　武力 24　智力 94　忠诚 25</li>
+  <li><b>魏延</b>　猛将　武力 94　智力 70　忠诚 36</li>
+  <li><b>陆抗</b>　军师　武力 78　智力 93　忠诚 51</li>
+  <li><b>董卓</b>　猛将　武力 92　智力 53　忠诚 30</li>
+  <li><b>杨修</b>　军师　武力 26　智力 92　忠诚 53</li>
+  <li><b>呼厨泉</b>　猛将　武力 91　智力 21　忠诚 45</li>
+  <li><b>马腾</b>　猛将　武力 91　智力 58　忠诚 51</li>
+  <li><b>沮授</b>　军师　武力 61　智力 90　忠诚 43</li>
+  <li><b>黄舞蝶</b>　猛将　武力 90　智力 70　忠诚 50</li>
+  <li><b>陈宫</b>　军师　武力 62　智力 90　忠诚 54</li>
+  </ul>
+
+  <div class="warn">
+    <b>找不到人在哪？</b>数据表里没有"某武将开局在哪个城"的记录，能查到的只有每座城的
+    君主 / 太守 / 军师。想看各大势力开局占了哪些城、谁是君主，翻《剧本开局攻略》。
+    其余的武将要么在野（靠"说服人才"去挖），要么要在战场上俘获。
+  </div>
+
+  <footer>依据《三国群英传V》游戏本体数据整理　·　可登场武将 828 名，其中 780 名可在游戏内招揽</footer>
+
+</div>
+</body>
+</html>
